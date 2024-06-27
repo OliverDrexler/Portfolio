@@ -1,3 +1,47 @@
 body {
     margin: 0;
 }
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('./assets/fonts/Overpass-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass Italic';
+    src: url('./assets/fonts/Overpass-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Syne';
+    src: url('./assets/fonts/Syne-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('./assets/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+.overpass {
+    font-family: 'Overpass';
+}
+
+.overpass-italic {
+    font-family: 'Overpass Italic';
+}
+
+.syne {
+    font-family: 'Syne';
+}
+
+.orbitron {
+    font-family: 'Orbitron';
+}
