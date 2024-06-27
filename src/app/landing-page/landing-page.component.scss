@@ -1,5 +1,17 @@
-.landing-page {
+.landing-page-wrapper {
     width: 100%;
     height: calc(100vh - 90px);
     background-color: rgba(76, 83, 94, 1);
+    position: relative;
+}
+
+.landing-page-diagonal {
+    height: 550px;
+    width: 100%;
+    background-color: rgba(43, 43, 51, 1);
+    position: absolute;
+    bottom: 0;
+    clip-path: polygon(0 40%, 100% 20%, 100% 100%, 0 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
 }
