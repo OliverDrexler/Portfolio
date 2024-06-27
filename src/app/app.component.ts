@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { AotComponent } from './aot/aot.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, HeaderComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent, HeaderComponent, AotComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
