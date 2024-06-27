@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { AotComponent } from './aot/aot.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     RouterOutlet,
     FooterComponent,
     HeaderComponent,
-    AotComponent,
+    LandingPageComponent,
     AboutMeComponent
   ],
   templateUrl: './app.component.html',
