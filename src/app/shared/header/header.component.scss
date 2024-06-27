@@ -2,9 +2,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 100px 15px 100px;
-    background-color: rgba(20, 29, 47, 0.8);
-    height: 92px;
+    padding: 0px 100px 0px 100px;
+    background-color: rgba(76, 83, 94, 1);
+    height: 90px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    z-index: 10;
 
     img {
         width: 200px;
