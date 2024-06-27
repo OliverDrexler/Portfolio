@@ -5,13 +5,26 @@
     position: relative;
 }
 
+.landing-page-content {
+    position: relative;
+    display: flex;
+
+    img {
+        width: 450px;
+        position: relative;
+        top: 150px; 
+        z-index: 0; 
+    }
+}
+
 .landing-page-diagonal {
-    height: 550px;
+    height: 700px;
     width: 100%;
     background-color: rgba(43, 43, 51, 1);
     position: absolute;
     bottom: 0;
     clip-path: polygon(0 40%, 100% 20%, 100% 100%, 0 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow-y: hidden;
+    z-index: 1; 
+
 }
