@@ -3,33 +3,38 @@
     height: calc(100vh - 90px);
     background-color: rgba(76, 83, 94, 1);
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .landing-page-content {
-    position: relative;
+    position: absolute;
     display: flex;
+    justify-content: space-around;
     text-align: center;
+    top: 5%;
 
     img {
-        width: 400px;
-        position: relative;
-        top: 180px;
+        height: 900px;
         z-index: 0;
+        clip-path: inset(0 90px 0 90px);
     }
 
     h1 {
-        top: 180px;
-        position: relative;
         //color: rgba(170, 178, 209, 1);
-        color: whitesmoke;
+        color: rgba(245, 245, 245, 1);
         font-size: 72px;
         font-weight: 800;
         letter-spacing: -2px;
+        margin-top: 70px;
+        margin-bottom: 10px;
+        line-height: 72px;
+        margin-left: -100px;
     }
 }
 
 .landing-page-diagonal {
-    height: 200px;
+    height: 130px;
     width: 100%;
     background-color: rgba(43, 43, 51, 1);
     //background-color: rgba(20, 29, 47, 1);
@@ -48,7 +53,7 @@
 }
 
 .parting-line {
-    border: 3px solid whitesmoke;
+    border: 3px solid rgba(245, 245, 245, 1);
     width: 300px;
 }
 
@@ -58,4 +63,5 @@
     width: 100%;
     bottom: 0;
     background-color: rgba(43, 43, 51, 1);
+    z-index: 1;
 }
