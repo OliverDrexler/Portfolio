@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 100px 15px 100px; 
+    padding: 15px 100px 15px 100px;
     background-color: rgba(255, 252, 243, 1);
     height: 92px;
 
@@ -12,5 +12,9 @@ header {
 
     div {
         gap: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
