@@ -45,3 +45,28 @@ body {
 .orbitron {
     font-family: 'Orbitron';
 }
+
+.fcc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; /* Verhindert, dass das `div` Klicks blockiert */
+    //animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

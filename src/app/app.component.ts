@@ -14,3 +14,14 @@ import { HeaderComponent } from './shared/header/header.component';
 export class AppComponent {
   title = 'Portfolio';
 }
+
+document.addEventListener('mousemove', (e: MouseEvent) => {
+  const cursor = document.getElementById('cursor') as HTMLDivElement;
+  if (cursor) {
+    const offsetX = -10; 
+    const offsetY = -10; 
+
+    cursor.style.left = `${e.pageX + offsetX}px`;
+    cursor.style.top = `${e.pageY + offsetY}px`;
+  }
+});
