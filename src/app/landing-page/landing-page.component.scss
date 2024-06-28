@@ -13,11 +13,11 @@
     justify-content: space-around;
     text-align: center;
     top: 5%;
+    gap: 5%;
 
     img {
         height: 900px;
         z-index: 0;
-        clip-path: inset(0 90px 0 90px);
     }
 
     h1 {
@@ -29,7 +29,6 @@
         margin-top: 70px;
         margin-bottom: 10px;
         line-height: 72px;
-        margin-left: -100px;
     }
 }
 
