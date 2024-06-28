@@ -1,7 +1,8 @@
 .landing-page-wrapper {
     width: 100%;
     height: calc(100vh - 90px);
-    background-color: rgb(197, 196, 192);
+    //background-color: rgb(197, 196, 192);
+    background-color: rgba(255, 255, 255, 1);
     position: relative;
     display: flex;
     justify-content: center;
@@ -21,7 +22,7 @@
     }
 
     h1 {
-        color: rgba(20, 29, 47, 1);
+        color: rgb(0, 0, 0, 1);
         //color: rgba(245, 245, 245, 1);
         font-size: 72px;
         font-weight: 800;
@@ -43,8 +44,8 @@
 .landing-page-diagonal {
     height: 130px;
     width: 100%;
-    //background-color: rgba(43, 43, 51, 1);
-    background-color: rgba(20, 29, 47, 1);
+    background-color: rgb(0, 0, 0, 1);
+    //background-color: rgba(20, 29, 47, 1);
     position: absolute;
     bottom: calc(0px + 32.5%);
     clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
@@ -52,7 +53,7 @@
 }
 
 .landing-page-subheadline {
-    color: rgba(0, 188, 143, 1);
+    color: rgb(12, 235, 161);
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -2px;
@@ -60,7 +61,7 @@
 }
 
 .parting-line {
-    border: 3px solid rgba(20, 29, 47, 1);
+    border: 3px solid rgb(0, 0, 0, 1);
     width: 300px;
 }
 
@@ -72,13 +73,14 @@
     height: 33%;
     width: 100%;
     bottom: 0;
-    background-color: rgba(20, 29, 47, 1);
+    //background-color: rgba(20, 29, 47, 1);
+    background-color: rgb(0, 0, 0, 1);
     z-index: 1;
     font-weight: 300;
     font-size: 23px;
     letter-spacing: -1px;
     line-height: 23px;
-    color: rgb(197, 196, 192);
+    color: rgba(255, 255, 255, 1);
 }
 
 .landing-page-mail {
@@ -91,7 +93,7 @@
     left: 2.5%;
 
     &:hover {
-        color: rgba(0, 188, 143, 1);
+        color: rgb(12, 235, 161);
     }
 
     @media (max-width: 1100px) {
@@ -122,7 +124,7 @@
     svg {
         width: 54px;
         height: 95px;
-        stroke: rgb(197, 196, 192);
+        stroke: rgba(255, 255, 255, 1);
         position: absolute;
         top: -100px;
         left: 50%;
