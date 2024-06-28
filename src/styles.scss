@@ -4,6 +4,11 @@ body {
     //cursor: none;
 }
 
+html {
+    scrollbar-color: rgba(170, 178, 209, 1) rgba(76, 83, 94, 1);
+    scrollbar-width: thin;
+}
+
 .colors {
     background-color: rgba(43, 43, 51, 1);
     background-color: rgba(255, 252, 243, 1);
