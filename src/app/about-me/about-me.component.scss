@@ -1,6 +1,5 @@
 .about-me-wrapper {
-    height: 500px;
-    width: 100%;
+    width: 95%;
     background-color: rgba(20, 29, 47, 1);
     padding: 2.5%;
     z-index: 9999;
@@ -8,12 +7,42 @@
     h2 {
         margin: 0;
         font-weight: 800;
-        font-size: 62px;
+        font-size: 70px;
         padding-top: 30px;
+        padding-bottom: 30px;
         color: rgb(197, 196, 192);
 
         &:hover {
             color: rgba(0, 188, 143, 1);
         }
     }
+}
+
+.about-me-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-size: 23px;
+        line-height: 27px;
+        font-weight: 400;
+        color: rgb(197, 196, 192);
+        text-align: justify;
+        margin: 0;
+    }
+
+    img {
+        width: 450px;
+        height: auto;
+
+        @media (max-width: 1100px) {
+            width: 300px;
+        }
+    }
+}
+
+.about-me-text-wrapper {
+    width: 50%;
+    //padding-right: 100px;
 }
