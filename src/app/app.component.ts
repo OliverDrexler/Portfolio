@@ -6,6 +6,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
     HeaderComponent,
     LandingPageComponent,
     AboutMeComponent,
-    ArrowLeftComponent
+    ArrowLeftComponent,
+    SkillsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
