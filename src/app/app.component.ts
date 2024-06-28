@@ -5,6 +5,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     FooterComponent,
     HeaderComponent,
     LandingPageComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ArrowLeftComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
