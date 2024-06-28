@@ -16,7 +16,7 @@
     gap: 5%;
 
     img {
-        height: 900px;
+        width: 300px;
         z-index: 0;
     }
 
@@ -52,7 +52,7 @@
 }
 
 .landing-page-subheadline {
-    color: rgb(0, 136, 136);
+    color: mediumvioletred;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -2px;
@@ -78,7 +78,7 @@
     font-size: 23px;
     letter-spacing: -1px;
     line-height: 23px;
-    color: rgb(0, 136, 136);
+    color: rgb(197, 196, 192);
 }
 
 .landing-page-mail {
@@ -118,7 +118,7 @@
     svg {
         width: 54px;
         height: 95px;
-        stroke: rgb(0, 136, 136);
+        stroke: rgb(197, 196, 192);
         position: absolute;
         top: -100px;
         left: 50%;

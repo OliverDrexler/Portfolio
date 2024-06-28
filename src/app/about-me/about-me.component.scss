@@ -2,11 +2,18 @@
     height: 500px;
     width: 100%;
     background-color: rgba(20, 29, 47, 1);
+    padding: 2.5%;
+    z-index: 9999;
 
     h2 {
         margin: 0;
         font-weight: 800;
         font-size: 62px;
         padding-top: 30px;
+        color: rgb(197, 196, 192);
+
+        &:hover {
+            color: rgb(0, 136, 136);
+        }
     }
 }
