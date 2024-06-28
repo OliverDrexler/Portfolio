@@ -18,6 +18,7 @@ html {
     background-color: rgb(197, 196, 192);
     color: rgba(89, 136, 255, 1);
     color: rgb(0, 136, 136);
+    color: rgba(0, 188, 143, 1);
 }
 
 @font-face {
@@ -73,7 +74,7 @@ html {
 #cursor {
     width: 20px;
     height: 20px;
-    border: 2px solid mediumvioletred;
+    border: 2px solid rgba(0, 188, 143, 1);
     border-radius: 50%;
     position: absolute;
     z-index: 100;
