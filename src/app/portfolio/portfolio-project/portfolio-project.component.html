@@ -1,4 +1,7 @@
 <section class="project-wrapper" [ngClass]="{'reverse-order': isReverse}">
+    <div>
+        <p>{{ formatNumber(currentProject) }}/{{ formatNumber(totalProjects) }}</p>
+    </div>
     <div class="img-container">
         <div class="img-border"></div>
         <img [src]="getImgSrc()" [alt]="getImgAlt()">
