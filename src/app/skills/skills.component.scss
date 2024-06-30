@@ -43,11 +43,34 @@ h2 {
     color: rgba(0, 0, 0, 1);
     font-size: 16px;
 
-    .icon-wrapper:hover {
-        color: rgb(86, 147, 244);
+    .icon-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            color: rgb(86, 147, 244);
+            
+            img {
+                animation: jump 0.5s ease;
+            }
+        }
     }
 
     @media (min-width: 1100px) {
         gap: 120px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
