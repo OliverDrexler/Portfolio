@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   padding: 2.5% 0;
-
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .project-count {
@@ -34,6 +34,16 @@
     width: 45%;
     height: 0;
     padding-top: calc(45% * 0.544);
+
+    .arrow {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(100% - 9px);
+      z-index: -10;
+    }
   }
 
   img,
