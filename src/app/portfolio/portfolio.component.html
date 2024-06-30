@@ -6,5 +6,5 @@
             Interact with projects to see my skills in action.
         </p>
     </div>
-    <app-portfolio-project></app-portfolio-project>
+    <app-portfolio-project *ngFor="let project of projects; let i = index" [isReverse]="i % 2 !== 0"></app-portfolio-project>
 </section>

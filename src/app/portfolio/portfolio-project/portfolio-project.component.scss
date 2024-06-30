@@ -1,0 +1,27 @@
+.project-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &.reverse-order {
+        flex-direction: row-reverse;
+      }
+
+      .project-item {
+        padding: 20px;
+
+      }
+}
+
+
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
