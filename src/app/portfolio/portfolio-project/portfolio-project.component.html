@@ -1,7 +1,7 @@
 <section class="project-wrapper" [ngClass]="{'reverse-order': isReverse}">
     <div class="img-container">
         <div class="img-border"></div>
-        <img src="../../../assets/img/04_projects/join.png" alt="">
+        <img [src]="getImgSrc()" [alt]="getImgAlt()">
     </div>
     <div class="div2">
         Hallo Welt
