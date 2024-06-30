@@ -17,6 +17,8 @@ export class PortfolioProjectComponent {
   imgAltNormal = 'Join';
   imgSrcReverse = '../../../assets/img/04_projects/pl.png';
   imgAltReverse = 'El Pollo Loco';
+  nameNormal = 'Join';
+  nameReverse = 'El Pollo Loco';
 
   /**
    * Returns the appropriate image source based on the isReverse flag.
@@ -42,5 +44,9 @@ export class PortfolioProjectComponent {
    */
   formatNumber(num: number): string {
     return num < 10 ? `0${num}` : `${num}`;
+  }
+
+  getName() {
+    return this.isReverse ? this.nameReverse : this.nameNormal;
   }
 }

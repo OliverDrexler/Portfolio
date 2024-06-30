@@ -9,6 +9,13 @@
 .project-count {
   display: flex;
   justify-content: flex-end;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+
+  p {
+    margin: 30px 0;
+  }
 
   &.reverse-order {
     justify-content: flex-start;
@@ -69,8 +76,10 @@
   }
 }
 
-.div2 {
-  width: 100px;
-  height: 100px;
-  background-color: green;
+.project-info {
+
+  h3 {
+    font-size: 40px;
+    font-weight: 800;
+  }
 }

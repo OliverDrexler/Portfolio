@@ -1,5 +1,5 @@
 <section class="project-wrapper">
-    <div class="project-count" [ngClass]="{'reverse-order': isReverse}">
+    <div class="project-count syne" [ngClass]="{'reverse-order': isReverse}">
         <p>{{ formatNumber(currentProject) }}/{{ formatNumber(totalProjects) }}</p>
     </div>
     <div class="project-overview" [ngClass]="{'reverse-order': isReverse}">
@@ -7,8 +7,8 @@
             <div class="img-border"></div>
             <img [src]="getImgSrc()" [alt]="getImgAlt()">
         </div>
-        <div class="div2">
-            Hallo Welt
+        <div class="project-info syne">
+            <h3>{{ getName() }}</h3>
         </div>
     </div>
 </section>
