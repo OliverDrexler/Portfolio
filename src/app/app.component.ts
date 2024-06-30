@@ -8,6 +8,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ArrowRightComponent } from './arrow-right/arrow-right.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { ArrowRightComponent } from './arrow-right/arrow-right.component';
     AboutMeComponent,
     ArrowLeftComponent,
     SkillsComponent,
-    ArrowRightComponent
+    ArrowRightComponent,
+    PortfolioComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
