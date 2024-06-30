@@ -13,27 +13,35 @@ export class PortfolioProjectComponent {
   @Input() currentProject: number = 1;
   @Input() totalProjects: number = 1;
 
-  imgSrcNormal = '../../../assets/img/04_projects/join.png';
-  imgAltNormal = 'Join';
-  imgSrcReverse = '../../../assets/img/04_projects/pl.png';
-  imgAltReverse = 'El Pollo Loco';
-  nameNormal = 'Join';
-  nameReverse = 'El Pollo Loco';
+  projects = [
+    {
+      imgSrc: '../../../assets/img/04_projects/join.png',
+      imgAlt: 'Join',
+      name: 'Join'
+    },
+    {
+      imgSrc: '../../../assets/img/04_projects/pl.png',
+      imgAlt: 'El Pollo Loco',
+      name: 'El Pollo Loco'
+    }
+  ]
 
   /**
    * Returns the appropriate image source based on the isReverse flag.
    * @returns {string} The image source URL.
    */
-  getImgSrc() {
-    return this.isReverse ? this.imgSrcReverse : this.imgSrcNormal;
+  getImgSrc(): string {
+    const projectIndex = this.currentProject - 1;
+    return this.projects[projectIndex]?.imgSrc || '';
   }
 
   /**
    * Returns the appropriate alt text based on the isReverse flag.
    * @returns {string} The alt text for the image.
    */
-  getImgAlt() {
-    return this.isReverse ? this.imgAltReverse : this.imgAltNormal;
+  getImgAlt(): string {
+    const projectIndex = this.currentProject - 1;
+    return this.projects[projectIndex]?.imgAlt || '';
   }
 
   /**
@@ -46,7 +54,12 @@ export class PortfolioProjectComponent {
     return num < 10 ? `0${num}` : `${num}`;
   }
 
-  getName() {
-    return this.isReverse ? this.nameReverse : this.nameNormal;
+  /**
+   * Returns the appropriate project name based on the current project index.
+   * @returns {string} The project name.
+   */
+  getName(): string {
+    const projectIndex = this.currentProject - 1;
+    return this.projects[projectIndex]?.name || '';
   }
 }
