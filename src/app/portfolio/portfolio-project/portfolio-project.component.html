@@ -1,12 +1,14 @@
-<section class="project-wrapper" [ngClass]="{'reverse-order': isReverse}">
-    <div>
+<section class="project-wrapper">
+    <div class="project-count" [ngClass]="{'reverse-order': isReverse}">
         <p>{{ formatNumber(currentProject) }}/{{ formatNumber(totalProjects) }}</p>
     </div>
-    <div class="img-container">
-        <div class="img-border"></div>
-        <img [src]="getImgSrc()" [alt]="getImgAlt()">
-    </div>
-    <div class="div2">
-        Hallo Welt
+    <div class="project-overview" [ngClass]="{'reverse-order': isReverse}">
+        <div class="img-container">
+            <div class="img-border"></div>
+            <img [src]="getImgSrc()" [alt]="getImgAlt()">
+        </div>
+        <div class="div2">
+            Hallo Welt
+        </div>
     </div>
 </section>
