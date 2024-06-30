@@ -26,13 +26,14 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 100px;
   filter: grayscale(1);
 
   .img-container {
     position: relative;
-    width: 40%;
+    width: 45%;
     height: 0;
-    padding-top: calc(40% * 0.544);
+    padding-top: calc(45% * 0.544);
   }
 
   img,
@@ -77,6 +78,9 @@
 }
 
 .project-info {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
 
   h3 {
     font-size: 40px;
