@@ -17,14 +17,20 @@ export class PortfolioProjectComponent {
     {
       imgSrc: '../../../assets/img/04_projects/join.png',
       imgAlt: 'Join',
-      name: 'Join'
+      name: 'Join',
+      devTools: 'JavaScript | HTML | CSS | Git',
+      description:
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
     },
     {
       imgSrc: '../../../assets/img/04_projects/pl.png',
       imgAlt: 'El Pollo Loco',
-      name: 'El Pollo Loco'
-    }
-  ]
+      name: 'El Pollo Loco',
+      devTools: 'JavaScript | HTML | CSS',
+      description:
+        'An entertaining Jump-and-Run game based on Object-Oriented-Programming. Help Pepe to find coins and tabasco salsa to fight against crazy chicken.',
+    },
+  ];
 
   /**
    * Returns the appropriate image source based on the isReverse flag.
@@ -61,5 +67,24 @@ export class PortfolioProjectComponent {
   getName(): string {
     const projectIndex = this.currentProject - 1;
     return this.projects[projectIndex]?.name || '';
+  }
+
+  /**
+   * Returns the appropriate in the project used dev tools based on 
+   * the current project index.
+   * @returns {string} The project dev tools.
+   */
+  getDevTools(): string {
+    const projectIndex = this.currentProject - 1;
+    return this.projects[projectIndex]?.devTools || '';
+  }
+
+   /**
+   * Returns the appropriate project description based on the current project index.
+   * @returns {string} The project description.
+   */
+   getDescription(): string {
+    const projectIndex = this.currentProject - 1;
+    return this.projects[projectIndex]?.description || '';
   }
 }
