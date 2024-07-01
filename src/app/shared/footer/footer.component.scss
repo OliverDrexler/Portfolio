@@ -31,3 +31,40 @@ footer {
         cursor: pointer;
     }
 }
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: end;
+
+    p {
+        color: rgba(255, 255, 255, 1);
+        margin: 0;
+        font-family: 16px;
+        line-height: 19px;
+        font-weight: 400;
+    }
+    
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+
+    a {
+        cursor: pointer;
+
+        svg {
+            fill: rgba(255, 255, 255, 1);
+        }
+
+        &:hover {
+            svg {
+                fill: rgb(86, 147, 244);
+            }
+        }
+    }
+
+    
+}
