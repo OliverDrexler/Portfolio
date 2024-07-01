@@ -8,19 +8,27 @@
                 Say hello! Let's talk about your ideas and turn them into reality
             </span>
             <div class="contact-form">
-                <form (ngSubmit)="onSubmit()">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <label for="fname">Name</label>
-                    <input [(ngModel)]="contactData.name" type="text" id="fname" name="firstname"
+                    <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" type="text" id="fname" name="firstname"
                         placeholder="Your name.." required>
+                        @if (!name.valid && name.touched) {
+                            <span style="color: white;">Please enter your name</span>
+                        }
 
                     <label for="lname">Email</label>
-                    <input [(ngModel)]="contactData.email" type="email" id="lname" name="lastname"
-                        placeholder="Your email.." required>
+                    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="lname" name="lastname"
+                        placeholder="Your email.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        @if (!email.valid && email.touched) {
+                            <span style="color: white;">Please enter your email</span>
+                        }
 
                     <label for="subject">Subject</label>
-                    <textarea [(ngModel)]="contactData.message" id="subject" name="subject"
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="subject" name="subject"
                         placeholder="Write something.." style="height:200px" required></textarea>
-
+                    @if (!message.valid && message.touched) {
+                        <span style="color: white;">Please enter a message</span>
+                    }
                     <input type="submit" value="Submit">
 
                 </form>
