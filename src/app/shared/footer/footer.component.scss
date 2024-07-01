@@ -62,9 +62,20 @@ footer {
         &:hover {
             svg {
                 fill: rgb(86, 147, 244);
+                animation: jump 0.5s ease;
             }
         }
     }
+}
 
-    
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
