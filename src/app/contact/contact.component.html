@@ -31,8 +31,8 @@
                 <div class="privacy-container">
 
                     <label for="privacy" class="custom-checkbox">
-                        <input type="checkbox" checked="checked" id="privacy" name="privacy" [(ngModel)]="contactData.privacyAccepted"
-                            required>
+                        <input type="checkbox" checked="checked" id="privacy" name="privacy"
+                            [(ngModel)]="contactData.privacyAccepted" required>
                         <span class="checkmark"></span>
                     </label>
                     <p>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined
@@ -42,5 +42,11 @@
                     [disabled]="!contactForm.form.valid || !contactData.privacyAccepted">
             </form>
         </div>
+        <a href="#" class="arrow-up">
+            <svg width="54" height="95" viewBox="0 0 54 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="line" d="M2 67.1055L27 92.1055L52 67.1055" pathLength="1" stroke-width="4" />
+                <path class="line" d="M27 0V92.1053" pathLength="1" stroke-width="4" />
+            </svg>
+        </a>
     </div>
 </section>
