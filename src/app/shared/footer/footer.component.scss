@@ -1,6 +1,33 @@
 footer {
     position: relative;
-    height: 128px;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 95%;
+    padding: 2.5%;
     background-color: rgba(0, 0, 0, 1);
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+        width: 58px;
+        height: calc(width * 0.69);
+    }
+
+    p {
+        color: rgba(255, 255, 255, 1);
+        margin: 0;
+        font-family: 23px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+
+    a {
+        cursor: pointer;
+    }
 }
