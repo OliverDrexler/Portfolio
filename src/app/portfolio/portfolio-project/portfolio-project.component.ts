@@ -18,7 +18,7 @@ export class PortfolioProjectComponent {
       imgSrc: '../../../assets/img/04_projects/join.png',
       imgAlt: 'Join',
       name: 'Join',
-      devTools: 'JavaScript | HTML | CSS | Git',
+      devTools: 'JavaScript | HTML | CSS | Firebase | Git',
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
     },
