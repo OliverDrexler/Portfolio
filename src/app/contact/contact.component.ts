@@ -14,6 +14,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    privacyAccepted: false,
   }
 
   //   mailTest = true;
@@ -30,7 +31,7 @@ export class ContactComponent {
   // };
 
   onSubmit(ngForm: NgForm) {
-    // if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    // if (this.contactData.privacyAccepted && ngForm.submitted && ngForm.form.valid && !this.mailTest) {
     //   this.http.post(this.post.endPoint, this.post.body(this.contactData))
     //     .subscribe({
     //       next: (response) => {
