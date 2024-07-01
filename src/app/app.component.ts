@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ArrowRightComponent } from './arrow-right/arrow-right.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioProjectComponent } from './portfolio/portfolio-project/portfolio-project.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,8 @@ import { PortfolioProjectComponent } from './portfolio/portfolio-project/portfol
     SkillsComponent,
     ArrowRightComponent,
     PortfolioComponent,
-    PortfolioProjectComponent
+    PortfolioProjectComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
