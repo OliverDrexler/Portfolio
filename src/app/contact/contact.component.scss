@@ -157,6 +157,7 @@
 
         input:checked~.checkmark {
             background-color: transparent;
+            border: 2px solid rgb(86, 147, 244);
         }
 
         .checkmark:after {
@@ -170,7 +171,7 @@
         }
 
         .checkmark:after {
-            left: 4px;
+            left: 4.4px;
             top: 0px;
             width: 5px;
             height: 10px;
