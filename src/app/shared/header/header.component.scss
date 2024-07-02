@@ -121,6 +121,8 @@ header {
 
 .dropdown-menu {
     position: fixed;
+    display: flex;
+    align-items: center;
     //display: none;
     width: 100%;
     height: calc(100vh - 90px);
@@ -151,6 +153,28 @@ header {
 
 .dropdown-menu.active {
     display: block;
+}
+
+.dropdown-links {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20%;
+    gap: 50px;
+
+    a {
+        font-size: 80px;
+        font-weight: 700;
+        letter-spacing: -2px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 1);
+
+        &:hover {
+            color: rgb(86, 147, 244);
+        }
+    }
 }
 
 .dropdown-diagonal {
@@ -219,4 +243,46 @@ header {
     100% {
         transform: translateY(0);
     }
+}
+
+.animated-div {
+    position: relative;
+    width: 500px; /* Passt die Breite an den Inhalt an */
+}
+
+.animated-div a {
+    position: relative;
+    padding-left: 10px; /* Platz für die Linie */
+    text-decoration: none;
+    color: black; /* Textfarbe, nach Bedarf anpassen */
+}
+
+.animated-div .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background-color: black;
+    transition: height 0.3s ease;
+}
+
+.animated-div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.animated-div:hover .line {
+    height: 0;
+}
+
+.animated-div:hover::after {
+    width: 100%; /* Die Länge, die die horizontale Linie erreichen soll */
+    left: 0;
 }
