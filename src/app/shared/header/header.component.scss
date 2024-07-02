@@ -123,7 +123,8 @@ header {
     position: fixed;
     display: flex;
     align-items: center;
-    //display: none;
+    justify-content: center;
+    display: none;
     width: 100%;
     height: calc(100vh - 90px);
     top: 90px;
@@ -141,7 +142,7 @@ header {
         font-size: 70px;
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
-        padding-left: 2.5%;
+        left: 2.5%;
         bottom: 120px;
         z-index: 60;
 
@@ -152,15 +153,14 @@ header {
 }
 
 .dropdown-menu.active {
-    display: block;
+    display: flex;
 }
 
 .dropdown-links {
-    position: absolute;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-top: -20%;
     gap: 50px;
 
@@ -247,14 +247,15 @@ header {
 
 .animated-div {
     position: relative;
-    width: max-content; /* Passt die Breite an den Inhalt an */
+    height: max-content; 
+    text-align: center;
 }
 
 .animated-div a {
     position: relative;
-    padding-left: 10px; /* Platz für die Linie */
+    padding-left: 30px;
     text-decoration: none;
-    color: black; /* Textfarbe, nach Bedarf anpassen */
+    color: black;
     text-align: left;
 }
 
@@ -262,7 +263,7 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 2px;
+    width: 4px;
     height: 50%;
     background-color: black;
     transition: height 0.3s ease;
@@ -273,8 +274,8 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 10px;
-    height: 2px;
+    width: 20px;
+    height: 4px;
     background-color: black;
     transition: width 0.5s ease, left 0.5s ease;
 }
@@ -284,6 +285,6 @@ header {
 }
 
 .animated-div:hover::after {
-    width: 100%; /* Die Länge, die die horizontale Linie erreichen soll */
+    width: 100%; 
     left: 0;
 }
