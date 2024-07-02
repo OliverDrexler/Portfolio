@@ -40,9 +40,11 @@ export class AppComponent implements AfterViewInit {
   /**
    * Lifecycle hook that is called after the component's view has been fully initialized.
    * Initializes mouse listeners for the custom cursor.
+   * Initializes checkbox listener for the dropdown menu.
    */
   ngAfterViewInit() {
     this.addMouseListeners();
+    this.addCheckboxListener();
   }
 
   /**
@@ -65,6 +67,41 @@ export class AppComponent implements AfterViewInit {
         setTimeout(() => {
           this.renderer.removeClass(cursor, 'clicked');
         }, 500);
+      });
+    }
+  }
+
+  /**
+   * Adds the 'overlay-active' class to the body element to disable the scrollbar.
+   */
+  addDropdownClassToBody() {
+    this.renderer.addClass(document.body, 'dropdown-active');
+  }
+
+  /**
+   * Removes the 'overlay-active' class from the body element to enable the scrollbar.
+   */
+  removeDropdownClassFromBody() {
+    this.renderer.removeClass(document.body, 'dropdown-active');
+  }
+
+  /**
+   * Sets up an event listener for the checkbox to show or hide the overlay.
+   * When the checkbox is checked, the overlay is displayed. When unchecked, the overlay is hidden.
+   */
+  addCheckboxListener() {
+    const checkbox = this.el.nativeElement.querySelector('#checkbox2');
+    const overlay = this.el.nativeElement.querySelector('#dropdown');
+
+    if (checkbox && overlay) {
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          this.renderer.addClass(overlay, 'active');
+          this.addDropdownClassToBody();
+        } else {
+          this.renderer.removeClass(overlay, 'active');
+          this.removeDropdownClassFromBody();
+        }
       });
     }
   }

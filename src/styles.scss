@@ -3,6 +3,10 @@ body {
     overflow-x: hidden;
 }
 
+body.dropdown-active {
+    overflow: hidden;
+  }
+
 html {
     scrollbar-color: rgba(89, 136, 255, 1) rgba(255, 255, 255, 1);
     scrollbar-width: thin;

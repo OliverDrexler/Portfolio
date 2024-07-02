@@ -118,3 +118,21 @@ header {
     transform: translateX(-40px);
     background-color: transparent;
 }
+
+.dropdown-menu {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: calc(100vh - 90px);
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 50; 
+    transition: all 0.5s ease;
+}
+
+.dropdown-menu.active {
+    display: block;
+}
