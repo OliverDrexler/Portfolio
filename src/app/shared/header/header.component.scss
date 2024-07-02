@@ -247,7 +247,7 @@ header {
 
 .animated-div {
     position: relative;
-    width: 500px; /* Passt die Breite an den Inhalt an */
+    width: max-content; /* Passt die Breite an den Inhalt an */
 }
 
 .animated-div a {
@@ -255,6 +255,7 @@ header {
     padding-left: 10px; /* Platz für die Linie */
     text-decoration: none;
     color: black; /* Textfarbe, nach Bedarf anpassen */
+    text-align: left;
 }
 
 .animated-div .line {
