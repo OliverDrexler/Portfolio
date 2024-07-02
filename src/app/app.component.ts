@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -27,22 +27,45 @@ import { ContactComponent } from './contact/contact.component';
     ArrowRightComponent,
     PortfolioComponent,
     PortfolioProjectComponent,
-    ContactComponent
+    ContactComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
-}
 
-document.addEventListener('mousemove', (e: MouseEvent) => {
-  const cursor = document.getElementById('cursor') as HTMLDivElement;
-  if (cursor) {
-    const offsetX = -10;
-    const offsetY = -10;
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
 
-    cursor.style.left = `${e.pageX + offsetX}px`;
-    cursor.style.top = `${e.pageY + offsetY}px`;
+  /**
+   * Lifecycle hook that is called after the component's view has been fully initialized.
+   * Initializes mouse listeners for the custom cursor.
+   */
+  ngAfterViewInit() {
+    this.addMouseListeners();
   }
-});
+
+  /**
+   * Adds event listeners for mouse movement and click events to animate the custom cursor.
+   */
+  addMouseListeners() {
+    const cursor = this.el.nativeElement.querySelector('#cursor');
+    if (cursor) {
+      document.addEventListener('mousemove', (e: MouseEvent) => {
+        const offsetX = -10;
+        const offsetY = -10;
+
+        this.renderer.setStyle(cursor, 'left', `${e.pageX + offsetX}px`);
+        this.renderer.setStyle(cursor, 'top', `${e.pageY + offsetY}px`);
+      });
+
+      document.addEventListener('click', () => {
+        this.renderer.addClass(cursor, 'clicked');
+
+        setTimeout(() => {
+          this.renderer.removeClass(cursor, 'clicked');
+        }, 500);
+      });
+    }
+  }
+}

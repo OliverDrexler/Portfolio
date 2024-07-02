@@ -76,24 +76,97 @@ html {
 }
 
 #cursor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
     border: 2px solid rgb(86, 147, 244);
     border-radius: 50%;
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
     pointer-events: none;
-    //animation: blink 1s infinite;
+    transition: transform 0.2s ease;
+    animation: blink 2.5s infinite;
+
+    .cursor-2 {
+        width: 10px;
+        height: 10px;
+        border: 2px solid rgb(86, 147, 244);
+        border-radius: 50%;
+        animation: blink-2 2.5s infinite;
+    }
+}
+
+.clicked {
+    animation: click-animation-cursor 0.5s forwards !important;
+}
+
+.clicked .cursor-2 {
+    animation: click-animation 0.5s forwards !important;
 }
 
 @keyframes blink {
+    0% {
+        transform: scale(1);
+    }
 
-    0%,
+    50% {
+        transform: scale(1.2);
+    }
+
     100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blink-2 {
+    0% {
+        transform: scale(1);
         opacity: 1;
     }
 
     50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(2);
         opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes click-animation-cursor {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
