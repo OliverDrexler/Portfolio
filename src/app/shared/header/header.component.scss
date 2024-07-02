@@ -16,13 +16,28 @@ header {
         width: 80px;
     }
 
-    div {
-        gap: 20px;
-        //color: #aab2d1;
-        color: rgb(0, 0, 0, 1);
+    
+}
 
-        &:hover {
-            cursor: pointer;
-        }
+.header-right {
+    gap: 20px;
+
+    div {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.language-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    div:hover {
+        cursor: pointer;
+        color: rgb(86, 147, 244);
     }
 }
