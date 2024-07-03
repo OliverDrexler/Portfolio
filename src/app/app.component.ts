@@ -3,16 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ArrowRightComponent } from './arrow-right/arrow-right.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { PortfolioProjectComponent } from './portfolio/portfolio-project/portfolio-project.component';
-import { ContactComponent } from './contact/contact.component';
 import { DropdownMenuComponent } from './shared/dropdown-menu/dropdown-menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 @Component({
   selector: 'app-root',
@@ -20,16 +13,9 @@ import { ImprintComponent } from './imprint/imprint.component';
   imports: [
     CommonModule,
     RouterOutlet,
+    MainContentComponent,
     FooterComponent,
     HeaderComponent,
-    LandingPageComponent,
-    AboutMeComponent,
-    ArrowLeftComponent,
-    SkillsComponent,
-    ArrowRightComponent,
-    PortfolioComponent,
-    PortfolioProjectComponent,
-    ContactComponent,
     DropdownMenuComponent,
     ImprintComponent
   ],
