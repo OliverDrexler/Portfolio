@@ -1,0 +1,54 @@
+.arrow-wrapper {
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    background-color: rgba(255, 255, 255, 1);
+
+    div {
+        margin-right: 20%;
+        transform: rotate(45deg);
+    }
+
+    svg {
+        width: 54px;
+        height: 95px;
+        animation: blink 2.5s infinite; 
+        stroke: rgba(0, 0, 0, 1);
+    }
+
+    &.left {
+        justify-content: flex-start;
+        
+        div {
+            margin-left: 20%;
+            margin-right: 0;
+            transform: rotate(-45deg);
+        }
+
+        svg {
+            right: 20%;
+        }
+    }
+
+    &.right {
+        justify-content: flex-end;
+        
+        div {
+            margin-right: 20%;
+            transform: rotate(45deg);
+        }
+
+        svg {
+            right: 20%;
+        }
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
