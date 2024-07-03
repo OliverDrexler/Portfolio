@@ -58,14 +58,11 @@ export class AppComponent implements AfterViewInit {
       document.addEventListener('mousemove', (e: MouseEvent) => {
         const offsetX = -10;
         const offsetY = -10;
-
         this.renderer.setStyle(cursor, 'left', `${e.pageX + offsetX}px`);
         this.renderer.setStyle(cursor, 'top', `${e.pageY + offsetY}px`);
       });
-
       document.addEventListener('click', () => {
         this.renderer.addClass(cursor, 'clicked');
-
         setTimeout(() => {
           this.renderer.removeClass(cursor, 'clicked');
         }, 500);
@@ -88,33 +85,48 @@ export class AppComponent implements AfterViewInit {
   }
 
   /**
+   * Handles the change event for the dropdown checkbox.
+   * Adds or removes the active class on the overlay and the dropdown class on the body.
+   */
+  handleCheckboxChange(checkbox: HTMLInputElement, overlay: HTMLElement) {
+    if (checkbox.checked) {
+      this.renderer.addClass(overlay, 'active');
+      this.addDropdownClassToBody();
+    } else {
+      this.renderer.removeClass(overlay, 'active');
+      this.removeDropdownClassFromBody();
+    }
+  }
+
+  /**
+   * Adds click event listeners to the links within the dropdown.
+   * Closes the dropdown when a link is clicked.
+   */
+  addLinkClickListeners(links: NodeListOf<HTMLAnchorElement>, checkbox: HTMLInputElement, overlay: HTMLElement) {
+    links.forEach((link: HTMLAnchorElement) => {
+      link.addEventListener('click', () => {
+        checkbox.checked = false;
+        this.renderer.removeClass(overlay, 'active');
+        this.removeDropdownClassFromBody();
+      });
+    });
+  }
+
+  /**
    * Sets up an event listener for the checkbox to show or hide the overlay.
    * When the checkbox is checked, the overlay is displayed. When unchecked, the overlay is hidden.
    */
   addCheckboxListener() {
-    const checkbox = this.el.nativeElement.querySelector('#checkbox2');
-    const overlay = this.el.nativeElement.querySelector('#dropdown');
-    const links = this.el.nativeElement.querySelectorAll('.dropdown-links a');
-  
+    const checkbox = this.el.nativeElement.querySelector('#checkbox2') as HTMLInputElement;
+    const overlay = this.el.nativeElement.querySelector('#dropdown') as HTMLElement;
+    const links = this.el.nativeElement.querySelectorAll('.dropdown-links a') as NodeListOf<HTMLAnchorElement>;
+
     if (checkbox && overlay) {
       checkbox.addEventListener('change', () => {
-        if (checkbox.checked) {
-          this.renderer.addClass(overlay, 'active');
-          this.addDropdownClassToBody();
-        } else {
-          this.renderer.removeClass(overlay, 'active');
-          this.removeDropdownClassFromBody();
-        }
+        this.handleCheckboxChange(checkbox, overlay);
       });
-  
-      links.forEach((link: HTMLAnchorElement) => {
-        link.addEventListener('click', () => {
-          checkbox.checked = false;
-          this.renderer.removeClass(overlay, 'active');
-          this.removeDropdownClassFromBody();
-        });
-      });
+
+      this.addLinkClickListeners(links, checkbox, overlay);
     }
-  }
-  
+  }  
 }
