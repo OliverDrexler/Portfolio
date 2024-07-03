@@ -12,6 +12,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioProjectComponent } from './portfolio/portfolio-project/portfolio-project.component';
 import { ContactComponent } from './contact/contact.component';
 import { DropdownMenuComponent } from './shared/dropdown-menu/dropdown-menu.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +30,8 @@ import { DropdownMenuComponent } from './shared/dropdown-menu/dropdown-menu.comp
     PortfolioComponent,
     PortfolioProjectComponent,
     ContactComponent,
-    DropdownMenuComponent
+    DropdownMenuComponent,
+    ImprintComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
