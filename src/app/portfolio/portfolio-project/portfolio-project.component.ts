@@ -21,6 +21,7 @@ export class PortfolioProjectComponent {
       devTools: 'JavaScript | HTML | CSS | Firebase | Git',
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      link: 'https://github.com/OliverDrexler/JOIN',
     },
     {
       imgSrc: '../../../assets/img/04_projects/pl.png',
@@ -29,6 +30,7 @@ export class PortfolioProjectComponent {
       devTools: 'JavaScript | HTML | CSS',
       description:
         'An entertaining Jump-and-Run game based on Object-Oriented-Programming. Help Pepe to find coins and tabasco salsa to fight against crazy chicken.',
+      link: 'https://github.com/OliverDrexler/El-Pollo-Loco',
     },
   ];
 
@@ -70,7 +72,7 @@ export class PortfolioProjectComponent {
   }
 
   /**
-   * Returns the appropriate in the project used dev tools based on 
+   * Returns the appropriate in the project used dev tools based on
    * the current project index.
    * @returns {string} The project dev tools.
    */
@@ -79,12 +81,21 @@ export class PortfolioProjectComponent {
     return this.projects[projectIndex]?.devTools || '';
   }
 
-   /**
+  /**
    * Returns the appropriate project description based on the current project index.
    * @returns {string} The project description.
    */
-   getDescription(): string {
+  getDescription(): string {
     const projectIndex = this.currentProject - 1;
     return this.projects[projectIndex]?.description || '';
+  }
+
+  /**
+   * Returns the appropriate project github link based on the current project index.
+   * @returns {string} The project link.
+   */
+  getLink(): string {
+    const projectIndex = this.currentProject - 1;
+    return this.projects[projectIndex]?.link || '';
   }
 }
