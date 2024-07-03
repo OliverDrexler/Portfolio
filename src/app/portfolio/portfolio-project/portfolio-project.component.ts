@@ -24,7 +24,7 @@ export class PortfolioProjectComponent {
       link: 'https://github.com/OliverDrexler/JOIN',
     },
     {
-      imgSrc: '../../../assets/img/04_projects/pl.png',
+      imgSrc: '../../../assets/img/04_projects/pl_3.png',
       imgAlt: 'El Pollo Loco',
       name: 'El Pollo Loco',
       devTools: 'JavaScript | HTML | CSS',
