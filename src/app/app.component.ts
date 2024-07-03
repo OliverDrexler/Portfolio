@@ -94,7 +94,8 @@ export class AppComponent implements AfterViewInit {
   addCheckboxListener() {
     const checkbox = this.el.nativeElement.querySelector('#checkbox2');
     const overlay = this.el.nativeElement.querySelector('#dropdown');
-
+    const links = this.el.nativeElement.querySelectorAll('.dropdown-links a');
+  
     if (checkbox && overlay) {
       checkbox.addEventListener('change', () => {
         if (checkbox.checked) {
@@ -105,6 +106,15 @@ export class AppComponent implements AfterViewInit {
           this.removeDropdownClassFromBody();
         }
       });
+  
+      links.forEach((link: HTMLAnchorElement) => {
+        link.addEventListener('click', () => {
+          checkbox.checked = false;
+          this.renderer.removeClass(overlay, 'active');
+          this.removeDropdownClassFromBody();
+        });
+      });
     }
   }
+  
 }
