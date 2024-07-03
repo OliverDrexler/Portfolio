@@ -131,6 +131,9 @@ export class AppComponent implements AfterViewInit {
     }
   }  
 
+  /**
+   * Takes the header offset into account when scrolling to each section.
+   */
   fixScrollDestination() {
     const header = this.el.nativeElement.querySelector('header');
     const headerHeight = header ? header.offsetHeight : 0;
