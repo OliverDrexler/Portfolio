@@ -47,6 +47,7 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.addMouseListeners();
     this.addCheckboxListener();
+    this.fixScrollDestination();
   }
 
   /**
@@ -129,4 +130,21 @@ export class AppComponent implements AfterViewInit {
       this.addLinkClickListeners(links, checkbox, overlay);
     }
   }  
+
+  fixScrollDestination() {
+    const header = this.el.nativeElement.querySelector('header');
+    const headerHeight = header ? header.offsetHeight : 0;
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = (anchor as HTMLAnchorElement).getAttribute('href')!.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - headerHeight,
+          });
+        }
+      });
+    });
+  }
 }
