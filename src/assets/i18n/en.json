@@ -341,6 +341,7 @@
     "GOOGLE_FONTS": "Google Fonts (provided on own server)",
     "GOOGLE_FONTS_TEXT": "Provision of font files for a user-friendly presentation of our online offer",
     "GOOGLE_FONTS_PROVIDER": "Service provider: The Google Fonts are hosted on our server, no data is transmitted to Google",
-    "GOOGLE_FONTS_LEGAL_BASES": "Legal bases: Legitimate interests (Art. 6 Abs. 1 S. 1 lit. f) GDPR)"
+    "GOOGLE_FONTS_LEGAL_BASES": "Legal bases: Legitimate interests (Art. 6 Abs. 1 S. 1 lit. f) GDPR)",
+    "GENERATOR": "Created with free Datenschutz-Generator.de by Dr. Thomas Schwenke"
   }
 }
