@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 100px 0px 100px;
+    padding-inline: max(5%,(100% - 1240px) / 2);
     background-color: rgba(255, 255, 255, 1);
     height: 90px;
     top: 0;
