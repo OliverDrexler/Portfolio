@@ -12,6 +12,14 @@
     "HEADLINE": "Portfolio",
     "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
   },
+  "PROJECTS": {
+    "JOIN": {
+        "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    "POLLO_LOCO": {
+        "DESCRIPTION": "An entertaining Jump-and-Run game based on Object-Oriented-Programming. Help Pepe to find coins and tabasco salsa to fight against crazy chicken."
+    } 
+  },
   "CONTACT": {
     "HEADLINE": "Say Hi!",
     "SUBHEADLINE": "Want to discuss a new project?",

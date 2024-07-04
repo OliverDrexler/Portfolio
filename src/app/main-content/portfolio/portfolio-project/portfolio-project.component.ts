@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio-project',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio-project.component.html',
   styleUrl: './portfolio-project.component.scss',
 })
@@ -20,7 +21,7 @@ export class PortfolioProjectComponent {
       name: 'Join',
       devTools: 'JavaScript | HTML | CSS | Firebase | Git',
       description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+        'PROJECTS.JOIN.DESCRIPTION',
       link: 'https://github.com/OliverDrexler/JOIN',
     },
     {
@@ -29,10 +30,12 @@ export class PortfolioProjectComponent {
       name: 'El Pollo Loco',
       devTools: 'JavaScript | HTML | CSS',
       description:
-        'An entertaining Jump-and-Run game based on Object-Oriented-Programming. Help Pepe to find coins and tabasco salsa to fight against crazy chicken.',
+        'PROJECTS.POLLO_LOCO.DESCRIPTION',
       link: 'https://github.com/OliverDrexler/El-Pollo-Loco',
     },
   ];
+
+  constructor(private translate: TranslateService) {}
 
   /**
    * Returns the appropriate image source based on the isReverse flag.
@@ -87,7 +90,8 @@ export class PortfolioProjectComponent {
    */
   getDescription(): string {
     const projectIndex = this.currentProject - 1;
-    return this.projects[projectIndex]?.description || '';
+    return this.translate.instant(this.projects[projectIndex]?.description || '');
+
   }
 
   /**

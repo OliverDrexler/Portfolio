@@ -9,8 +9,16 @@
     "HEADLINE": "Skills"
   },
   "PORTFOLIO": {
-    "HEADLINE": "Portfolio", 
+    "HEADLINE": "Portfolio",
     "DESCRIPTION": "Hier gibt es eine Auswahl meiner Arbeit zu entdecken - interagiere mit den Projekten, um meine Fähigkeiten zu sehen."
+  },
+  "PROJECTS": {
+    "JOIN": {
+      "DESCRIPTION": "Vom Kanban System inspirierter Taskmanager. Man kann Aufgaben erstellen und mit Drag-and-Drop organisieren sowie Benutzer und Kategorien zuweisen."
+    },
+    "POLLO_LOCO": {
+      "DESCRIPTION": "Ein unterhaltsames Jump-and-Run-Spiel basierend auf objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen verrückte Hühner zu kämpfen."
+    }
   },
   "CONTACT": {
     "HEADLINE": "Sag Hi!",
