@@ -65,6 +65,8 @@
       "PLUGINS": "Plugins and embedded functions as well as content"
     },
     "PROCESSING_OVERVIEW": {
+      "HEAD": "Overview of processing",
+      "TEXT": "The following overview summarizes the types of data processed and the purposes of their processing and refers to the data subjects.",
       "DATA_TYPES": "Types of processed data",
       "DATA_TYPES_LIST": [
         "Inventory data",

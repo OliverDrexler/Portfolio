@@ -65,6 +65,8 @@
         "PLUGINS": "Plug-ins und eingebettete Funktionen sowie Inhalte"
       },
       "PROCESSING_OVERVIEW": {
+        "HEAD": "Übersicht der Verarbeitungen",
+        "TEXT": "Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.",
         "DATA_TYPES": "Arten der verarbeiteten Daten",
         "DATA_TYPES_LIST": [
           "Bestandsdaten",
