@@ -38,7 +38,7 @@
                     <p>{{ 'CONTACT.PRIVACY_1' | translate }} <a href="imprint">{{ 'CONTACT.PRIVACY_2' | translate }}</a> {{ 'CONTACT.PRIVACY_3' | translate }}
                     </p>
                 </div>
-                <input type="submit" value="Send message"
+                <input type="submit" value="{{ 'CONTACT.BTN' | translate }}"
                     [disabled]="!contactForm.form.valid || !contactData.privacyAccepted">
             </form>
         </div>
