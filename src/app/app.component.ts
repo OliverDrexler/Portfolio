@@ -6,6 +6,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { DropdownMenuComponent } from './shared/dropdown-menu/dropdown-menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { AppTranslateModule } from './app.translate';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,7 @@ import { MainContentComponent } from './main-content/main-content.component';
     DropdownMenuComponent,
     ImprintComponent,
     RouterModule,
+    AppTranslateModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -29,8 +32,15 @@ export class AppComponent implements AfterViewInit {
   constructor(
     private el: ElementRef,
     private renderer: Renderer2,
-    private router: Router
-  ) {}
+    private router: Router,
+    private translate: TranslateService,
+  ) {
+    translate.setDefaultLang('en');
+  }
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
 
   /**
    * Lifecycle hook that is called after the component's view has been fully initialized.

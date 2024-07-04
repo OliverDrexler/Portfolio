@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,11 @@ export class HeaderComponent {
   @Output() openNoteChange: EventEmitter<boolean> = new EventEmitter();
   hoveredAddBtn = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {}
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
 
   /**
    * Generates a URL for the provided fragment.
