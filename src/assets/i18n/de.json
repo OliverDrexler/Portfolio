@@ -6,6 +6,9 @@
     "CONTACT": "Kontakt"
   },
   "SKILLS": {
-    "HEADLINE": "Skills"
+    "HEADLINE": "Fähigkeiten"
+  },
+  "PORTFOLIO": {
+    "HEADLINE": "Portfolio"
   }
 }

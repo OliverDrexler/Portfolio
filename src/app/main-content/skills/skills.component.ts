@@ -6,8 +6,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
   constructor(private translate: TranslateService) {}
 }
+
