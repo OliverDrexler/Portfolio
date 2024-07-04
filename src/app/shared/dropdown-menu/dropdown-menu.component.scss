@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    //display: none;
+    display: none;
     width: 100%;
     height: calc(100vh - 90px);
     top: 90px;
@@ -21,9 +21,10 @@
         font-size: 70px;
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
-        left: 2.5%;
+        left: 0;
         bottom: 120px;
         z-index: 60;
+        padding-inline: max(5%, (100% - 1240px) / 2);
 
         &:hover {
             color: rgb(86, 147, 244);
@@ -67,43 +68,47 @@
 
 .dropdown-bottom {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 150px;
-    width: 95%;
-    padding: 0 2.5%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 1);
     bottom: 0;
 
-    a {
-        font-size: 23px;
-        line-height: 23px;
-        letter-spacing: -1px;
-        color: rgba(255, 255, 255, 1);
-        text-decoration: none;
-        margin-top: -40px;
-
-        &:hover {
-            color: rgb(86, 147, 244);
-        }
-    }
-
-    .dropdown-icons {
+    .bottom-content {
+        padding-inline: max(5%, (100% - 1240px) / 2);
         display: flex;
-        gap: 20px;
-    
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+
         a {
-            cursor: pointer;
-    
-            svg {
-                fill: rgba(255, 255, 255, 1);
-            }
-    
+            font-size: 23px;
+            line-height: 23px;
+            letter-spacing: -1px;
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+
             &:hover {
+                color: rgb(86, 147, 244);
+            }
+        }
+
+        .dropdown-icons {
+            display: flex;
+            height: 50px;
+            gap: 20px;
+
+            a {
+                cursor: pointer;
+
                 svg {
-                    fill: rgb(86, 147, 244);
-                    animation: jump 0.5s ease;
+                    fill: rgba(255, 255, 255, 1);
+                }
+
+                &:hover {
+                    svg {
+                        fill: rgb(86, 147, 244);
+                        animation: jump 0.5s ease;
+                    }
                 }
             }
         }
@@ -112,7 +117,7 @@
 
 .animated-div {
     position: relative;
-    height: max-content; 
+    height: max-content;
     text-align: center;
 }
 
@@ -150,7 +155,7 @@
 }
 
 .animated-div:hover::after {
-    width: 100%; 
+    width: 100%;
     left: 0;
 }
 
