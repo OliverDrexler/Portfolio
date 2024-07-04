@@ -30,7 +30,10 @@
     "PRIVACY_1": "Ich habe die",
     "PRIVACY_2": "Datenschutzerklärung",
     "PRIVACY_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu",
-    "BTN": "Nachricht senden"
+    "BTN": "Nachricht senden",
+    "NAME_R": "Name ist erforderlich und muss mindestens 3 Zeichen lang sein",
+    "MAIL_R": "E-Mail ist erforderlich",
+    "MESSAGE_R": "Nachricht ist erforderlich und muss mindestens 10 Zeichen lang sein"
   },
   "FOOTER": {
     "LEGAL": "Impressum & Datenschutz"

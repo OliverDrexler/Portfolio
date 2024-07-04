@@ -12,21 +12,21 @@
                 <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" type="text" id="fname"
                     name="firstname" placeholder="{{ 'CONTACT.NAME' | translate }}" required>
                 @if (!name.valid && name.touched) {
-                <span style="color: white;">Please enter your name</span>
+                <div class="warning-text">{{ 'CONTACT.NAME_R' | translate }}</div>
                 }
 
                 <label for="lname">Email</label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="lname" name="lastname"
                     placeholder="{{ 'CONTACT.MAIL' | translate }}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                 @if (!email.valid && email.touched) {
-                <span style="color: white;">Please enter your email</span>
+                <div class="warning-text">{{ 'CONTACT.MAIL_R' | translate }}</div>
                 }
 
                 <label for="subject">Subject</label>
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="subject" name="subject"
                     placeholder="{{ 'CONTACT.MESSAGE' | translate }}" required></textarea>
                 @if (!message.valid && message.touched) {
-                <span style="color: white;">Please enter a message</span>
+                <div class="warning-text">{{ 'CONTACT.MESSAGE_R' | translate }}</div>
                 }
                 <div class="privacy-container">
 

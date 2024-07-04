@@ -30,7 +30,10 @@
     "PRIVACY_1": "I've read the",
     "PRIVACY_2": "privacy policy",
     "PRIVACY_3": "and agree to the processing of my data as outlined",
-    "BTN": "Send message"
+    "BTN": "Send message",
+    "NAME_R": "Your name is required and needs a minimum of 3 characters",
+    "MAIL_R": "Your email is required",
+    "MESSAGE_R": "Your message is required and needs a minimum of 10 characters"
   },
   "FOOTER": {
     "LEGAL": "Legal notice"
