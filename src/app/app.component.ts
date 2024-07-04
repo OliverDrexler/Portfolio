@@ -109,10 +109,10 @@ export class AppComponent implements AfterViewInit {
   handleCheckboxChange(checkbox: HTMLInputElement, overlay: HTMLElement) {
     if (checkbox.checked) {
       this.renderer.addClass(overlay, 'active');
-      this.addDropdownClassToBody();
+      this.renderer.addClass(document.body, 'dropdown-active');
     } else {
       this.renderer.removeClass(overlay, 'active');
-      this.removeDropdownClassFromBody();
+      this.renderer.removeClass(document.body, 'dropdown-active');
     }
   }
 
@@ -129,7 +129,7 @@ export class AppComponent implements AfterViewInit {
       link.addEventListener('click', () => {
         checkbox.checked = false;
         this.renderer.removeClass(overlay, 'active');
-        this.removeDropdownClassFromBody();
+        this.renderer.removeClass(document.body, 'dropdown-active');
       });
     });
   }
@@ -146,7 +146,7 @@ export class AppComponent implements AfterViewInit {
       '#dropdown'
     ) as HTMLElement;
     const links = this.el.nativeElement.querySelectorAll(
-      '.dropdown-links a'
+      '.dropdown-links a, .dropdown-bottom a'
     ) as NodeListOf<HTMLAnchorElement>;
 
     if (checkbox && overlay) {
