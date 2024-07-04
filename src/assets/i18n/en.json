@@ -14,11 +14,11 @@
   },
   "PROJECTS": {
     "JOIN": {
-        "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     },
     "POLLO_LOCO": {
-        "DESCRIPTION": "An entertaining Jump-and-Run game based on Object-Oriented-Programming. Help Pepe to find coins and tabasco salsa to fight against crazy chicken."
-    } 
+      "DESCRIPTION": "An entertaining Jump-and-Run game based on Object-Oriented-Programming. Help Pepe to find coins and tabasco salsa to fight against crazy chicken."
+    }
   },
   "CONTACT": {
     "HEADLINE": "Say Hi!",
@@ -36,6 +36,192 @@
     "LEGAL": "Legal notice"
   },
   "IMPRINT": {
-    "HEADLINE": "Legal notice"
+    "HEADLINE": "Legal notice",
+    "SUBHEAD_1": "Imprint",
+    "SUBHEAD_2": "Privacy Policy",
+    "RESPONSIBLE": "Responsible",
+    "AUTHORIZED_PERSON": "Authorized representative: Oliver Drexler",
+    "DATA_PRIVACY_STATEMENT": "Privacy Policy",
+    "PREAMBLE": "Preamble",
+    "PREAMBLE_CONTENT": "With the following privacy policy, we would like to inform you about which types of your personal data (hereinafter also referred to as \"data\" for short) we process for which purposes and to what extent. The privacy policy applies to all personal data processing activities carried out by us, both in the context of providing our services and in particular on our websites, in mobile applications, as well as within external online presences, such as our social media profiles (hereinafter collectively referred to as \"online offering\").",
+    "PREAMBLE_NOTE": "The terms used are not gender-specific.",
+    "DATE": "As of: July 2024",
+    "CONTENT_OVERVIEW": "Content Overview",
+    "INDEX": {
+      "PREAMBLE": "Preamble",
+      "RESPONSIBLE": "Responsible",
+      "PROCESSING_OVERVIEW": "Overview of processing",
+      "LEGAL_BASIS": "Relevant legal bases",
+      "SECURITY_MEASURES": "Security measures",
+      "DATA_TRANSFER": "Transfer of personal data",
+      "INTERNATIONAL_TRANSFERS": "International data transfers",
+      "DATA_STORAGE": "General information on data storage and deletion",
+      "DATA_SUBJECT_RIGHTS": "Rights of data subjects",
+      "BUSINESS_SERVICES": "Business services",
+      "ONLINE_OFFERING": "Provision of the online offer and web hosting",
+      "COOKIES": "Use of cookies",
+      "CONTACT_MANAGEMENT": "Contact and request management",
+      "SOCIAL_MEDIA": "Social media presences",
+      "PLUGINS": "Plugins and embedded functions as well as content"
+    },
+    "PROCESSING_OVERVIEW": {
+      "DATA_TYPES": "Types of processed data",
+      "DATA_TYPES_LIST": [
+        "Inventory data",
+        "Payment data",
+        "Contact data",
+        "Content data",
+        "Contract data",
+        "Usage data",
+        "Meta, communication and procedural data",
+        "Protocol data"
+      ],
+      "CATEGORIES": "Categories of affected persons",
+      "CATEGORIES_LIST": [
+        "Service recipients and clients",
+        "Interested parties",
+        "Communication partners",
+        "Users",
+        "Business and contractual partners"
+      ],
+      "PURPOSES": "Purposes of processing",
+      "PURPOSES_LIST": [
+        "Provision of contractual services and fulfillment of contractual obligations",
+        "Communication",
+        "Security measures",
+        "Office and organizational procedures",
+        "Organizational and administrative procedures",
+        "Feedback",
+        "Provision of our online offer and user-friendliness",
+        "Information technology infrastructure",
+        "Public relations",
+        "Business processes and economic procedures"
+      ]
+    },
+    "LEGAL_BASIS_CONTENT": "Relevant legal bases according to the GDPR: Below you will find an overview of the legal bases of the GDPR on the basis of which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence. If more specific legal bases are relevant in individual cases, we will inform you of these in the privacy policy.",
+    "LEGAL_BASIS_LIST": [
+      "Consent (Art. 6 para. 1 sentence 1 lit. a GDPR) - The data subject has given their consent to the processing of personal data concerning them for one or more specific purposes.",
+      "Contract performance and pre-contractual inquiries (Art. 6 para. 1 sentence 1 lit. b GDPR) - The processing is necessary for the performance of a contract to which the data subject is a party or to take steps at the request of the data subject prior to entering into a contract.",
+      "Legal obligation (Art. 6 para. 1 sentence 1 lit. c GDPR) - The processing is necessary for compliance with a legal obligation to which the controller is subject.",
+      "Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR) - the processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, provided that such interests are not overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data."
+    ],
+    "NATIONAL_LAWS": "National data protection regulations in Germany: In addition to the data protection regulations of the GDPR, national regulations on data protection apply in Germany. This includes, in particular, the Federal Data Protection Act (BDSG). The BDSG contains special provisions on the right to information, the right to deletion, the right to object, the processing of special categories of personal data, processing for other purposes, and the transmission and automated decision-making in individual cases, including profiling. Furthermore, data protection laws of the individual federal states may apply.",
+    "DSG_NOTE": "Note on the applicability of GDPR and Swiss DSG: This privacy notice serves both to provide information under the Swiss DSG and under the General Data Protection Regulation (GDPR). For this reason, we ask you to note that due to the broader spatial application and comprehensibility, the terms of the GDPR are used. In particular, instead of the terms used in the Swiss DSG \"processing\" of \"personal data\", \"overriding interest\" and \"particularly sensitive personal data\", the terms used in the GDPR \"processing\" of \"personal data\" as well as \"legitimate interest\" and \"special categories of data\" are used. However, the legal meaning of the terms will continue to be determined according to the Swiss DSG within the scope of its applicability.",
+    "SECURITY_MEASURES": "We take appropriate technical and organizational measures in accordance with the legal requirements, taking into account the state of the art, implementation costs, and the nature, scope, circumstances, and purposes of the processing as well as the varying likelihood and severity of the risk to the rights and freedoms of natural persons, to ensure a level of protection appropriate to the risk.",
+    "SECURITY_MEASURES_LIST": [
+      "The measures include, in particular, ensuring the confidentiality, integrity, and availability of data by controlling physical and electronic access to the data as well as access, input, transfer, securing availability, and separation of data.",
+      "Furthermore, we have established procedures to ensure the exercise of data subject rights, deletion of data, and responses to data threats.",
+      "In addition, we take the protection of personal data into account already during the development or selection of hardware, software, and procedures in accordance with the principle of data protection through technology design and data protection-friendly default settings."
+    ],
+    "DATA_TRANSFER": "In the course of our processing of personal data, it may happen that this data is transferred to other locations, companies, legally independent organizational units, or persons, or that they are disclosed to them. Recipients of this data may include, for example, service providers entrusted with IT tasks or providers of services and content that are integrated into a website. In such cases, we observe the legal requirements and, in particular, conclude corresponding contracts or agreements that serve to protect your data with the recipients of your data.",
+    "INTERNATIONAL_TRANSFERS": {
+      "DATA_PROCESSING": "Data processing in third countries: If we process data in a third country (i.e., outside the European Union (EU), the European Economic Area (EEA)) or if the processing takes place in the context of using services of third parties or disclosure or transfer of data to other persons, entities, or companies, this only occurs in accordance with the legal requirements. If the level of data protection in the third country has been recognized by means of an adequacy decision (Art. 45 GDPR), this serves as the basis for the data transfer. Otherwise, data transfers only take place if the data protection level is otherwise ensured, in particular through standard contractual clauses (Art. 46 para. 2 lit. c GDPR), explicit consent, or in the case of contractual or legally required transfer (Art. 49 para. 1 GDPR). Otherwise, we will inform you of the basis of the third country transfer for the respective providers from the third country, with adequacy decisions taking precedence. Information on third country transfers and existing adequacy decisions can be found in the information offering of the EU Commission: <a href=\"https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de\" target=\"_blank\">https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de</a>.",
+      "DATA_PRIVACY_FRAMEWORK": "EU-US Trans-Atlantic Data Privacy Framework: As part of the so-called \"Data Privacy Framework\" (DPF), the EU Commission has also recognized the level of data protection for certain companies from the USA within the framework of the adequacy decision of 10.07.2023 as safe. The list of certified companies and further information on the DPF can be found on the website of the US Department of Commerce at <a href=\"https://www.dataprivacyframework.gov/\" target=\"_blank\">https://www.dataprivacyframework.gov/</a> (in English). We will inform you in the context of the privacy notices which of our service providers are certified under the Data Privacy Framework."
+    },
+    "DATA_STORAGE": "We delete personal data that we process in accordance with the legal requirements as soon as the underlying consents are revoked or no further legal basis for the processing exists. This applies to cases where the original processing purpose no longer exists or the data is no longer needed. Exceptions to this rule exist if legal obligations or special interests require longer storage or archiving of the data.",
+    "DATA_STORAGE_NOTES": [
+      "In particular, data that must be retained for commercial or tax law reasons or whose storage is necessary for legal prosecution or to protect the rights of other natural or legal persons must be archived accordingly.",
+      "Our privacy notices contain additional information on the retention and deletion of data that are specifically applicable to certain processing processes.",
+      "In the case of multiple indications of retention periods or deletion deadlines for a date, the longest period is always decisive.",
+      "If a deadline does not expressly begin on a specific date and lasts at least one year, it automatically starts at the end of the calendar year in which the triggering event occurred. In the case of ongoing contractual relationships in which data is stored, the triggering event is the date of effectiveness of the termination or other termination of the legal relationship.",
+      "Data that is no longer needed for the originally intended purpose, but is retained due to legal requirements or other reasons, will be processed exclusively for the reasons justifying their retention."
+    ],
+    "SUBJECT_RIGHTS": "Rights of data subjects under the GDPR: As data subjects, you have various rights under the GDPR, which are in particular derived from Art. 15 to 21 GDPR:",
+    "SUBJECT_RIGHTS_LIST": [
+      "Right to object: You have the right, on grounds relating to your particular situation, to object at any time to the processing of personal data concerning you that is based on Art. 6 para. 1 lit. e or f GDPR; this also applies to profiling based on these provisions. If personal data concerning you is processed for direct marketing purposes, you have the right to object at any time to the processing of personal data concerning you for such marketing purposes; this also applies to profiling to the extent that it is related to such direct marketing.",
+      "Right of withdrawal for consents: You have the right to withdraw consents given at any time.",
+      "Right of access: You have the right to request confirmation as to whether data concerning you is being processed and to obtain information about this data, as well as further information and a copy of the data, in accordance with the legal requirements.",
+      "Right to rectification: You have the right to request the completion of data concerning you or the correction of incorrect data concerning you, in accordance with the legal requirements.",
+      "Right to deletion and restriction of processing: You have the right, in accordance with the legal requirements, to request that data concerning you be deleted immediately, or alternatively, to request a restriction of the processing of the data, in accordance with the legal requirements.",
+      "Right to data portability: You have the right to receive the data concerning you that you have provided to us in a structured, commonly used, and machine-readable format, in accordance with the legal requirements, or to request that it be transferred to another controller.",
+      "Complaint to supervisory authority: Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work, or place of the alleged infringement, if you believe that the processing of personal data concerning you violates the requirements of the GDPR."
+    ],
+    "BUSINESS_SERVICES": {
+      "INTRO": "We process data of our contractual and business partners, such as customers and interested parties (collectively referred to as \"contractual partners\"), within the scope of contractual and comparable legal relationships as well as related measures and with regard to communication with the contractual partners (or pre-contractually), for example, to respond to inquiries.",
+      "PURPOSES": "We use this data to fulfill our contractual obligations. This includes, in particular, the obligations to provide the agreed services, any update obligations, and remedy of warranty and other performance disruptions. In addition, we use the data to safeguard our rights and for the purposes of the administrative tasks associated with these obligations and corporate organization. In addition, we process the data on the basis of our legitimate interests in proper and economic business management as well as in security measures to protect our contractual partners and our business operations from misuse, endangerment of their data, secrets, information, and rights (e.g., participation of telecommunications, transport, and other auxiliary services as well as subcontractors, banks, tax and legal advisors, payment service providers or tax authorities). In accordance with the applicable law, we only disclose the data of contractual partners to third parties to the extent necessary for the aforementioned purposes or to fulfill legal obligations. Information on further forms of processing, such as for marketing purposes, is provided to the contractual partners within the scope of this privacy policy.",
+      "INFORMATION": "We inform contractual partners which data is required for the aforementioned purposes before or during data collection, for example in online forms, through special markings (e.g., colors) or symbols (e.g., asterisks or similar), or personally.",
+      "DELETION": "We delete the data after the expiration of legal warranty and comparable obligations, i.e., generally after four years, unless the data is stored in a customer account, e.g., as long as it must be retained for legal reasons (e.g., for tax purposes, generally ten years). Data disclosed to us by the contractual partner in the course of an order is deleted in accordance with the specifications and generally after the end of the order."
+    },
+    "ONLINE_OFFERING": {
+      "INTRO": "We process the data of users to provide them with our online services. For this purpose, we process the user's IP address, which is necessary to transmit the contents and functions of our online services to the user's browser or end device.",
+      "DATA_TYPES": [
+        "Usage data (e.g., page views and dwell time, click paths, usage intensity and frequency, device types and operating systems used, interactions with content and functions)",
+        "Meta, communication and procedural data (e.g., IP addresses, timestamps, identification numbers, involved persons)",
+        "Protocol data (e.g., log files concerning logins or data retrieval or access times)"
+      ],
+      "CATEGORIES": "Affected persons: Users (e.g., website visitors, users of online services)",
+      "PURPOSES": "Purposes of processing: Provision of our online offering and user-friendliness; information technology infrastructure (operation and provision of information systems and technical devices (computers, servers, etc.).); security measures.",
+      "DELETION": "Deletion in accordance with the information in the section \"General information on data storage and deletion\"."
+    },
+    "COOKIES": {
+      "INTRO": "Cookies are small text files or other storage notes that store information on end devices and read information from them. For example, to store the login status in a user account, a shopping cart content in an e-shop, the accessed content, or the functions used of an online offer. Cookies can also be used for various purposes, such as the functionality, security, and comfort of online offerings as well as for creating analyses of visitor flows.",
+      "CONSENT_NOTICE": "Consent notice: We use cookies in accordance with legal requirements. Therefore, we obtain prior consent from users unless it is not required by law. Permission is particularly not necessary if storing and reading the information, including cookies, is strictly necessary to provide a telemedia service explicitly requested by the users (i.e., our online offer). The revocable consent is clearly communicated to users and contains information about the respective cookie usage.",
+      "LEGAL_BASIS": "Notes on data protection legal bases: The legal basis on which we process the personal data of users using cookies depends on whether we ask for their consent. If users consent, the legal basis for processing their data is the declared consent. Otherwise, the data processed using cookies is based on our legitimate interests (e.g., in a business operation of our online offer and its improvement) or, if necessary for the fulfillment of our contractual obligations, when the use of cookies is required to meet our contractual obligations. For what purposes the cookies are used by us, we inform in the course of this privacy policy or in the context of our consent and processing processes.",
+      "STORAGE_DURATION": {
+        "TEMPORARY_COOKIES": "Temporary cookies (also: session or session cookies): Temporary cookies are deleted at the latest after a user has left an online offer and closed their end device (e.g., browser or mobile application).",
+        "PERMANENT_COOKIES": "Permanent cookies: Permanent cookies remain stored even after closing the end device. For example, the login status can be saved, and preferred content can be displayed directly when the user visits a website again. Likewise, the user data collected using cookies can be used for reach measurement. Unless we provide users with explicit information about the type and storage duration of cookies (e.g., as part of obtaining consent), they should assume that these are permanent and the storage duration can be up to two years."
+      },
+      "OPT_OUT": "General notes on withdrawal and objection (Opt-out): Users can revoke their consents at any time and also object to the processing in accordance with legal requirements, also through the privacy settings of their browser.",
+      "DATA_TYPES": "Meta, communication and procedural data (e.g., IP addresses, timestamps, identification numbers, involved persons)"
+    },
+    "CONTACT_MANAGEMENT": {
+      "INTRO": "When contacting us (e.g., by post, contact form, email, phone, or via social media) and within the context of existing user and business relationships, the information of the inquiring persons is processed to the extent necessary to respond to the contact inquiries and any requested measures.",
+      "DATA_TYPES": [
+        "Inventory data (e.g., full name, residential address, contact information, customer number, etc.)",
+        "Contact data (e.g., postal and email addresses or phone numbers)",
+        "Content data (e.g., textual or visual messages and contributions, and the information concerning them, such as details of authorship or time of creation)",
+        "Usage data (e.g., page views and dwell time, click paths, usage intensity and frequency, device types and operating systems used, interactions with content and functions)",
+        "Meta, communication and procedural data (e.g., IP addresses, timestamps, identification numbers, involved persons)"
+      ],
+      "CATEGORIES": "Affected persons: Communication partners",
+      "PURPOSES": "Purposes of processing: Communication; organizational and administrative procedures; feedback (e.g., collecting feedback via online form). Provision of our online offering and user-friendliness.",
+      "DELETION": "Deletion in accordance with the information in the section \"General information on data storage and deletion\"."
+    },
+    "SOCIAL_MEDIA": {
+      "INTRO": "We maintain online presences within social networks and process user data within this context to communicate with the users active there or to offer information about us.",
+      "RISKS": "We would like to point out that user data may be processed outside the area of the European Union. This may pose risks for users, for example, by making it more difficult to enforce user rights.",
+      "ADDITIONAL_INFO": "Furthermore, user data within social networks is usually processed for market research and advertising purposes. For example, user behavior and resulting interests can be used to create usage profiles. These profiles may, in turn, be used to display advertisements inside and outside the networks that presumably correspond to the users' interests. For these purposes, cookies are usually stored on the users' computers, in which the usage behavior and interests of the users are stored. Additionally, the usage profiles may also store data independently of the devices used by the users (especially if they are members of the respective platforms and are logged in).",
+      "REFERENCES": "For a detailed presentation of the respective processing forms and the options for objection (opt-out), we refer to the privacy statements and information of the operators of the respective networks.",
+      "RIGHTS": "In the case of information requests and the assertion of data subject rights, we would like to point out that these are most effectively asserted with the providers. Only the providers have access to the user data and can take direct action and provide information. If you still need help, you can contact us.",
+      "DATA_TYPES": [
+        "Contact data (e.g., postal and email addresses or phone numbers)",
+        "Content data (e.g., textual or visual messages and contributions, and the information concerning them, such as details of authorship or time of creation)",
+        "Usage data (e.g., page views and dwell time, click paths, usage intensity and frequency, device types and operating systems used, interactions with content and functions)"
+      ],
+      "CATEGORIES": "Affected persons: Users (e.g., website visitors, users of online services)",
+      "PURPOSES": "Purposes of processing: Communication; feedback (e.g., collecting feedback via online form). Public relations.",
+      "DELETION": "Deletion in accordance with the information in the section \"General information on data storage and deletion\"."
+    },
+    "PLUGINS": {
+      "INTRO": "We integrate functional and content elements into our online offering that are obtained from the servers of their respective providers (hereinafter referred to as \"third-party providers\"). These may be, for example, graphics, videos, or city maps (hereinafter collectively referred to as \"content\").",
+      "IP_NOTICE": "The integration always presupposes that the third-party providers of this content process the IP address of the users, as they could not send the content to their browser without the IP address. The IP address is therefore necessary for the display of this content or functions. We strive to use only such content whose respective providers use the IP address solely for the delivery of the content. Third-party providers may also use so-called pixel tags (invisible graphics, also known as \"web beacons\") for statistical or marketing purposes. Through the \"pixel tags,\" information such as visitor traffic on the pages of this website can be evaluated. The pseudonymous information can also be stored in cookies on the users' device and contain, among other things, technical information about the browser and operating system, referring websites, visit time, and other information about the use of our online offer, as well as being combined with such information from other sources.",
+      "LEGAL_BASIS": "Notes on legal bases: If we ask users for their consent to use third-party providers, the legal basis for data processing is the consent. Otherwise, the user data is processed based on our legitimate interests (i.e., interest in efficient, economic, and recipient-friendly services). In this context, we would also like to point out the information on the use of cookies in this privacy policy.",
+      "DATA_TYPES": [
+        "Usage data (e.g., page views and dwell time, click paths, usage intensity and frequency, device types and operating systems used, interactions with content and functions)",
+        "Meta, communication and procedural data (e.g., IP addresses, timestamps, identification numbers, involved persons)"
+      ],
+      "CATEGORIES": "Affected persons: Users (e.g., website visitors, users of online services)",
+      "PURPOSES": "Purposes of processing: Provision of our online offering and user-friendliness.",
+      "DELETION": "Deletion in accordance with the information in the section \"General information on data storage and deletion\". Storage of cookies for up to 2 years (unless otherwise specified, cookies and similar storage methods can be stored on users' devices for up to two years)."
+    },
+    "COOKIES_PLUGINS": {
+      "GOOGLE_FONTS": "Google Fonts (provision on our server): Provision of font files for a user-friendly display of our online offer; service provider: The Google Fonts are hosted on our server, no data is transmitted to Google; legal bases: legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)."
+    },
+    "SERVER_LOGS": {
+      "INTRO": "Access to our online offer is logged in the form of so-called \"server log files.\" The server log files may include the address and name of the accessed websites and files, date and time of access, transmitted data volumes, notification of successful access, browser type and version, the user's operating system, referrer URL (the previously visited page), and IP addresses and the requesting provider. The server log files may be used for security purposes, e.g., to avoid server overload (especially in the case of misuse attacks, such as DDoS attacks), and to ensure the stability of the servers.",
+      "DELETION": "Deletion of data: Log file information is stored for a maximum of 30 days and then deleted or anonymized. Data required for evidence purposes is excluded from deletion until the respective incident is finally resolved."
+    },
+    "ALL_INKL": {
+      "INTRO": "Services in the field of providing information technology infrastructure and related services (e.g., storage space and/or computing capacity)",
+      "PROVIDER": "Service provider: ALL-INKL.COM - Neue Medien Münnich, Owner: René Münnich, Hauptstraße 68, 02742 Friedersdorf, Germany",
+      "LEGAL_BASIS": "Legal bases: legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR)",
+      "WEBSITE": "Website: <a href=\"https://all-inkl.com/\" target=\"_blank\">https://all-inkl.com/</a>",
+      "PRIVACY_POLICY": "Privacy policy: <a href=\"https://all-inkl.com/datenschutzinformationen/\" target=\"_blank\">https://all-inkl.com/datenschutzinformationen/</a>",
+      "CONTRACT": "Data processing agreement: Provided by the service provider."
+    },
+    "SEAL": {
+      "TEXT": "Created with the free privacy generator from Dr. Thomas Schwenke",
+      "LINK": "https://datenschutz-generator.de/"
+    }
   }
 }
