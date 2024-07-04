@@ -21,7 +21,7 @@ import { TranslateService } from '@ngx-translate/core';
     DropdownMenuComponent,
     ImprintComponent,
     RouterModule,
-    AppTranslateModule
+    AppTranslateModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -33,11 +33,16 @@ export class AppComponent implements AfterViewInit {
     private el: ElementRef,
     private renderer: Renderer2,
     private router: Router,
-    private translate: TranslateService,
+    private translate: TranslateService
   ) {
     translate.setDefaultLang('en');
   }
 
+  /**
+   * Changes the current language used by the application to the specified language.
+   * It utilizes the translate service to set the new language.
+   * @param {string} language - The language code to switch to
+   */
   switchLanguage(language: string) {
     this.translate.use(language);
   }
