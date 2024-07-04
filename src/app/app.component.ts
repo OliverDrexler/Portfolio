@@ -6,6 +6,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { DropdownMenuComponent } from './shared/dropdown-menu/dropdown-menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { MainContentComponent } from './main-content/main-content.component';
     FooterComponent,
     HeaderComponent,
     DropdownMenuComponent,
-    ImprintComponent
+    ImprintComponent,
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -25,7 +27,11 @@ import { MainContentComponent } from './main-content/main-content.component';
 export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  constructor(
+    private el: ElementRef,
+    private renderer: Renderer2,
+    private router: Router
+  ) {}
 
   /**
    * Lifecycle hook that is called after the component's view has been fully initialized.
@@ -36,6 +42,20 @@ export class AppComponent implements AfterViewInit {
     this.addMouseListeners();
     this.addCheckboxListener();
     this.fixScrollDestination();
+  }
+
+  /**
+   * Generates a URL for the provided fragment.
+   * If the user is on the imprint page, the URL includes the base URL.
+   * Otherwise, the URL is just the fragment for in-page navigation.
+   * @param fragment The fragment to navigate to.
+   * @returns The generated URL.
+   */
+  getLink(fragment: string): string {
+    if (this.router.url === '/imprint') {
+      return `/#${fragment}`;
+    }
+    return `#${fragment}`;
   }
 
   /**
@@ -91,7 +111,11 @@ export class AppComponent implements AfterViewInit {
    * Adds click event listeners to the links within the dropdown.
    * Closes the dropdown when a link is clicked.
    */
-  addLinkClickListeners(links: NodeListOf<HTMLAnchorElement>, checkbox: HTMLInputElement, overlay: HTMLElement) {
+  addLinkClickListeners(
+    links: NodeListOf<HTMLAnchorElement>,
+    checkbox: HTMLInputElement,
+    overlay: HTMLElement
+  ) {
     links.forEach((link: HTMLAnchorElement) => {
       link.addEventListener('click', () => {
         checkbox.checked = false;
@@ -106,9 +130,15 @@ export class AppComponent implements AfterViewInit {
    * When the checkbox is checked, the overlay is displayed. When unchecked, the overlay is hidden.
    */
   addCheckboxListener() {
-    const checkbox = this.el.nativeElement.querySelector('#checkbox2') as HTMLInputElement;
-    const overlay = this.el.nativeElement.querySelector('#dropdown') as HTMLElement;
-    const links = this.el.nativeElement.querySelectorAll('.dropdown-links a') as NodeListOf<HTMLAnchorElement>;
+    const checkbox = this.el.nativeElement.querySelector(
+      '#checkbox2'
+    ) as HTMLInputElement;
+    const overlay = this.el.nativeElement.querySelector(
+      '#dropdown'
+    ) as HTMLElement;
+    const links = this.el.nativeElement.querySelectorAll(
+      '.dropdown-links a'
+    ) as NodeListOf<HTMLAnchorElement>;
 
     if (checkbox && overlay) {
       checkbox.addEventListener('change', () => {
@@ -117,7 +147,7 @@ export class AppComponent implements AfterViewInit {
 
       this.addLinkClickListeners(links, checkbox, overlay);
     }
-  }  
+  }
 
   /**
    * Takes the header offset into account when scrolling to each section.
@@ -125,14 +155,17 @@ export class AppComponent implements AfterViewInit {
   fixScrollDestination() {
     const header = this.el.nativeElement.querySelector('header');
     const headerHeight = header ? header.offsetHeight : 0;
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetId = (anchor as HTMLAnchorElement).getAttribute('href')!.substring(1);
+        const targetId = (anchor as HTMLAnchorElement)
+          .getAttribute('href')!
+          .substring(1);
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
           window.scrollTo({
             top: targetElement.offsetTop - headerHeight,
+            behavior: 'smooth'
           });
         }
       });
