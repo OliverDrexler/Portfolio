@@ -165,7 +165,6 @@ export class AppComponent implements AfterViewInit {
         if (targetElement) {
           window.scrollTo({
             top: targetElement.offsetTop - headerHeight,
-            behavior: 'smooth'
           });
         }
       });
