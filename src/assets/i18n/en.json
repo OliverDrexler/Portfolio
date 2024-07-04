@@ -11,5 +11,13 @@
   "PORTFOLIO": {
     "HEADLINE": "Portfolio",
     "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+  "CONTACT": {
+    "HEADLINE": "Say Hi!",
+    "SUBHEADLINE": "Want to discuss a new project?",
+    "DESCRIPTION": "Say hello! Let's talk about your ideas and turn them into reality",
+    "NAME": "Your Name",
+    "MAIL": "Your email",
+    "MESSAGE": "Your message"
   }
 }
