@@ -100,6 +100,7 @@
         "Business processes and economic procedures"
       ]
     },
+    "LEGAL_BASIS": "Relevant legal bases",
     "LEGAL_BASIS_CONTENT": "Relevant legal bases according to the GDPR: Below you will find an overview of the legal bases of the GDPR on the basis of which we process personal data. Please note that in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence. If more specific legal bases are relevant in individual cases, we will inform you of these in the privacy policy.",
     "LEGAL_BASIS_LIST": [
       "Consent (Art. 6 para. 1 sentence 1 lit. a GDPR) - The data subject has given their consent to the processing of personal data concerning them for one or more specific purposes.",
