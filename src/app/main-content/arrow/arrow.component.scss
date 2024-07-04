@@ -1,12 +1,11 @@
 .arrow-wrapper {
-    width: 100%;
+    padding-inline: max(5%, (100% - 1240px) / 2);
     display: flex;
     margin: 30px 0;
     margin-bottom: -90px;
     background-color: rgba(255, 255, 255, 1);
 
     div {
-        margin-right: 20%;
         transform: rotate(45deg);
     }
 
@@ -21,7 +20,7 @@
         justify-content: flex-start;
         
         div {
-            margin-left: 20%;
+            margin-left: 5%;
             margin-right: 0;
             transform: rotate(-45deg);
         }
@@ -35,7 +34,7 @@
         justify-content: flex-end;
         
         div {
-            margin-right: 20%;
+            margin-right: 5%;
             transform: rotate(45deg);
         }
 
