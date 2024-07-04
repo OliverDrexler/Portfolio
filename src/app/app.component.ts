@@ -1,12 +1,11 @@
 import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router, RouterModule } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { DropdownMenuComponent } from './shared/dropdown-menu/dropdown-menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainContentComponent } from './main-content/main-content.component';
-import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
