@@ -18,6 +18,9 @@
     "DESCRIPTION": "Sag hallo! Lass uns über Deine Projekte sprechen und diese gemeinsam umsetzen",
     "NAME": "Name",
     "MAIL": "E-Mail",
-    "MESSAGE": "Deine Nachricht"
+    "MESSAGE": "Deine Nachricht",
+    "PRIVACY_1": "Ich habe die",
+    "PRIVACY_2": "Datenschutzerklärung",
+    "PRIVACY_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu"
   }
 }
