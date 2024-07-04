@@ -23,5 +23,8 @@
     "PRIVACY_2": "Datenschutzerklärung",
     "PRIVACY_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu",
     "BTN": "Nachricht senden"
+  },
+  "FOOTER": {
+    "LEGAL": "Impressum & Datenschutz"
   }
 }

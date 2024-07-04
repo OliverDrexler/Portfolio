@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) {}
 
   /**
    * Generates a URL for the provided fragment.
@@ -19,7 +20,7 @@ export class FooterComponent {
    * @returns The generated URL.
    */
   getLink(fragment: string): string {
-    if (window.location.pathname.includes('/imprint')) {      
+    if (window.location.pathname.includes('/imprint')) {
       return `/#${fragment}`;
     }
     return `#${fragment}`;
