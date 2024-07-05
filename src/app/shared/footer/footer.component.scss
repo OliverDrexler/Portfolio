@@ -125,6 +125,7 @@ footer {
         flex-direction: column-reverse;
         height: auto;
         padding: 30px;
+        width: calc(100% - padding);
     }
 
     .footer-icons {
