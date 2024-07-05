@@ -179,3 +179,76 @@
     transform: translateY(-50%) rotate(255deg) scale(1.5);
   }
 }
+
+@media (max-width: 800px) {
+
+  .project-overview,
+  .project-overview.reverse-order {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .img-container {
+      width: 80%;
+      padding-top: calc(80% * 0.544);
+    }
+  }
+
+  .project-info {
+    width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .project-overview,
+  .project-overview.reverse-order {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+
+  .project-overview,
+  .project-overview.reverse-order {
+    gap: 10px;
+
+    .arrow {
+      height: 30px;
+      width: 30px;
+      left: calc(100% - 2px);
+
+      &.reverse-order {
+        left: -32px;
+      }
+    }
+  }
+
+  .project-count {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .project-overview,
+  .project-overview.reverse-order {
+    gap: 5px;
+  }
+
+  .project-count {
+    font-size: 35px;
+  }
+
+  .project-info {
+    h3 {
+      font-size: 35px;
+    }
+  }
+
+  .project-btn {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
