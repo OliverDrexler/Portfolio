@@ -1,6 +1,5 @@
 .imprint-wrapper {
-    width: 95%;
-    padding: 2.5%;
+    padding-inline: max(5%, (100% - 1240px) / 2);
     background-color: rgba(255, 255, 255, 1);
     color: rgba(0, 0, 0, 1);
 
