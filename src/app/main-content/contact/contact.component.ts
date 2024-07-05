@@ -39,17 +39,10 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (
-      this.contactData.privacyAccepted &&
-      ngForm.submitted &&
-      ngForm.form.valid &&
-      !this.mailTest
-    ) {
-      this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            // Platz für weitere aktionen (danke für die mail mesage etc)
             this.showNotification = true;
             setTimeout(() => {
               this.showNotification = false;
@@ -62,11 +55,11 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
       this.showNotification = true;
       setTimeout(() => {
         this.showNotification = false;
       }, 3000);
+      ngForm.resetForm();
     }
   }
 }
