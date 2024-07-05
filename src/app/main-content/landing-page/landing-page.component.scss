@@ -28,6 +28,10 @@
         margin-top: 70px;
         margin-bottom: 10px;
         line-height: 72px;
+
+        span {
+            display: block;
+        }
     }
 
     @media (min-height: 900px) {
@@ -152,6 +156,24 @@
     p {
         margin: 0;
     }
+}
+
+.typewriter {
+    overflow: hidden; 
+    border-right: .15em solid rgba(255, 255, 255, 1);
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing 2.5s steps(40, end), blink-caret .75s step-end;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(255, 255, 255, 1) }
 }
 
 @keyframes fly {
