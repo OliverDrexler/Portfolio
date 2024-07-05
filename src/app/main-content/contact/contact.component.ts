@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -5,19 +6,21 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule, TranslateModule, CommonModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
   constructor(private translate: TranslateService) {}
-  
+
   contactData = {
     name: '',
     email: '',
     message: '',
     privacyAccepted: false,
-  }
+  };
+
+  showNotification = false;
 
   //   mailTest = true;
 
@@ -37,7 +40,11 @@ export class ContactComponent {
     //   this.http.post(this.post.endPoint, this.post.body(this.contactData))
     //     .subscribe({
     //       next: (response) => {
-              // Platz für weitere aktionen (danke für die mail mesage etc)
+    // Platz für weitere aktionen (danke für die mail mesage etc)
+    this.showNotification = true;
+    setTimeout(() => {
+      this.showNotification = false;
+    }, 3000);
     //         ngForm.resetForm();
     //       },
     //       error: (error) => {

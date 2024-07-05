@@ -33,7 +33,8 @@
     "BTN": "Nachricht senden",
     "NAME_R": "Name ist erforderlich und muss mindestens 3 Zeichen lang sein",
     "MAIL_R": "E-Mail ist erforderlich",
-    "MESSAGE_R": "Nachricht ist erforderlich und muss mindestens 10 Zeichen lang sein"
+    "MESSAGE_R": "Nachricht ist erforderlich und muss mindestens 10 Zeichen lang sein",
+    "SUBMIT_MESSAGE": "Vielen Dank für die Nachricht!"
   },
   "FOOTER": {
     "LEGAL": "Impressum & Datenschutz"

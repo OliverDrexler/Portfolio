@@ -33,7 +33,8 @@
     "BTN": "Send message",
     "NAME_R": "Your name is required and needs a minimum of 3 characters",
     "MAIL_R": "Your email is required",
-    "MESSAGE_R": "Your message is required and needs a minimum of 10 characters"
+    "MESSAGE_R": "Your message is required and needs a minimum of 10 characters",
+    "SUBMIT_MESSAGE": "Thank you for your message!"
   },
   "FOOTER": {
     "LEGAL": "Legal notice"
