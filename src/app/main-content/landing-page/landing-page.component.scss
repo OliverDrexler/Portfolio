@@ -65,32 +65,39 @@
 .landing-page-bottom {
     position: absolute;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     height: 33%;
     width: 100%;
     bottom: 0;
     background-color: rgb(0, 0, 0, 1);
     z-index: 1;
-    font-weight: 300;
-    font-size: 23px;
-    letter-spacing: -1px;
-    line-height: 23px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
 
-    a {
-        font-weight: 300;
-        font-size: 23px;
-        letter-spacing: -1px;
-        line-height: 23px;
-        text-decoration: none;
-        color: rgba(255, 255, 255, 1);
+    .bottom-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-inline: max(5%, (100% - 1240px) / 2);
 
-        &:hover {
-            color: rgb(86, 147, 244);
+        a {
+            font-weight: 300;
+            font-size: 23px;
+            letter-spacing: -1px;
+            line-height: 23px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+    
+            &:hover {
+                color: rgb(86, 147, 244);
+            }
         }
-    }
+
+        div {
+            font-weight: 300;
+            font-size: 23px;
+            letter-spacing: -1px;
+            line-height: 23px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }    
 }
 
 .landing-page-mail {
