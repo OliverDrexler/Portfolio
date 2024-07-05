@@ -77,19 +77,37 @@ export class AppComponent implements AfterViewInit {
   addMouseListeners() {
     const cursor = this.el.nativeElement.querySelector('#cursor');
     if (cursor) {
-      document.addEventListener('mousemove', (e: MouseEvent) => {
-        const offsetX = -10;
-        const offsetY = -10;
-        this.renderer.setStyle(cursor, 'left', `${e.pageX + offsetX}px`);
-        this.renderer.setStyle(cursor, 'top', `${e.pageY + offsetY}px`);
-      });
-      document.addEventListener('click', () => {
-        this.renderer.addClass(cursor, 'clicked');
-        setTimeout(() => {
-          this.renderer.removeClass(cursor, 'clicked');
-        }, 500);
-      });
+      this.setupMouseMoveListener(cursor);
+      this.setupClickListener(cursor);
     }
+  }
+
+  /**
+   * Sets up an event listener for mouse movements.
+   * Updates the position of the custom cursor based on mouse movements.
+   * @param cursor - The custom cursor element.
+   */
+  setupMouseMoveListener(cursor: HTMLElement) {
+    document.addEventListener('mousemove', (e: MouseEvent) => {
+      const offsetX = -10;
+      const offsetY = -10;
+      this.renderer.setStyle(cursor, 'left', `${e.pageX + offsetX}px`);
+      this.renderer.setStyle(cursor, 'top', `${e.pageY + offsetY}px`);
+    });
+  }
+
+  /**
+   * Sets up an event listener for mouse clicks.
+   * Adds the 'clicked' class to the custom cursor and removes it after 500 ms.
+   * @param cursor - The custom cursor element.
+   */
+  setupClickListener(cursor: HTMLElement) {
+    document.addEventListener('click', () => {
+      this.renderer.addClass(cursor, 'clicked');
+      setTimeout(() => {
+        this.renderer.removeClass(cursor, 'clicked');
+      }, 500);
+    });
   }
 
   /**
@@ -152,12 +170,10 @@ export class AppComponent implements AfterViewInit {
     const links = this.el.nativeElement.querySelectorAll(
       '.dropdown-links a, .dropdown-bottom a'
     ) as NodeListOf<HTMLAnchorElement>;
-
     if (checkbox && overlay) {
       checkbox.addEventListener('change', () => {
         this.handleCheckboxChange(checkbox, overlay);
       });
-
       this.addLinkClickListeners(links, checkbox, overlay);
     }
   }
