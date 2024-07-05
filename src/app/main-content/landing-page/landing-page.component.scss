@@ -88,7 +88,7 @@
             line-height: 23px;
             text-decoration: none;
             color: rgba(255, 255, 255, 1);
-    
+
             &:hover {
                 color: rgb(86, 147, 244);
             }
@@ -101,7 +101,7 @@
             line-height: 23px;
             color: rgba(255, 255, 255, 1);
         }
-    }    
+    }
 }
 
 .landing-page-mail {
@@ -159,21 +159,33 @@
 }
 
 .typewriter {
-    overflow: hidden; 
+    overflow: hidden;
     border-right: .15em solid rgba(255, 255, 255, 1);
-    margin: 0 auto; 
-    letter-spacing: .15em; 
+    margin: 0 auto;
+    letter-spacing: .15em;
     animation: typing 2.5s steps(40, end), blink-caret .75s step-end;
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgba(255, 255, 255, 1) }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgba(255, 255, 255, 1)
+    }
 }
 
 @keyframes fly {
@@ -183,5 +195,39 @@
 
     100% {
         top: 150px;
+    }
+}
+
+@media (max-width: 960px) {
+    .landing-page-content {
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        .landing-page-subheadline {
+            font-size: 22px;
+        }
+
+        .parting-line {
+            width: 40%;
+        }
+    }
+
+}
+
+@media (max-width: 760px) {
+    .landing-page-content {
+        top: 0;
+
+        img {
+            display: none;
+        }
+
     }
 }
