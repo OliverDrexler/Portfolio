@@ -22,7 +22,7 @@ export class PortfolioProjectComponent {
       devTools: 'JavaScript | HTML | CSS | Firebase | Git',
       description: 'PROJECTS.JOIN.DESCRIPTION',
       link: 'https://github.com/OliverDrexler/JOIN',
-      projectLink: 'https://oliverdrexler.com',
+      projectLink: 'https://oliverdrexler.com/join/',
     },
     {
       imgSrc: '../../../assets/img/04_projects/pl.png',
@@ -31,7 +31,7 @@ export class PortfolioProjectComponent {
       devTools: 'JavaScript | HTML | CSS',
       description: 'PROJECTS.POLLO_LOCO.DESCRIPTION',
       link: 'https://github.com/OliverDrexler/El-Pollo-Loco',
-      projectLink: 'https://oliverdrexler.com',
+      projectLink: 'https://oliverdrexler.com/pollo-loco/',
     },
   ];
 
