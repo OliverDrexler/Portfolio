@@ -38,3 +38,36 @@
         text-align: justify;
     }
 }
+
+@media (max-width: 640px) {
+    .portfolio-header {
+        h2 {
+            font-size: 55px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            line-break: auto;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .portfolio-header {
+        width: auto;
+
+        h2 {
+            font-size: 45px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .portfolio-header {
+        h2 {
+            font-size: 35px;
+        }
+    }
+}
