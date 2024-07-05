@@ -20,18 +20,18 @@ export class PortfolioProjectComponent {
       imgAlt: 'Join',
       name: 'Join',
       devTools: 'JavaScript | HTML | CSS | Firebase | Git',
-      description:
-        'PROJECTS.JOIN.DESCRIPTION',
+      description: 'PROJECTS.JOIN.DESCRIPTION',
       link: 'https://github.com/OliverDrexler/JOIN',
+      projectLink: 'https://oliverdrexler.com',
     },
     {
       imgSrc: '../../../assets/img/04_projects/pl.png',
       imgAlt: 'El Pollo Loco',
       name: 'El Pollo Loco',
       devTools: 'JavaScript | HTML | CSS',
-      description:
-        'PROJECTS.POLLO_LOCO.DESCRIPTION',
+      description: 'PROJECTS.POLLO_LOCO.DESCRIPTION',
       link: 'https://github.com/OliverDrexler/El-Pollo-Loco',
+      projectLink: 'https://oliverdrexler.com',
     },
   ];
 
@@ -90,16 +90,26 @@ export class PortfolioProjectComponent {
    */
   getDescription(): string {
     const projectIndex = this.currentProject - 1;
-    return this.translate.instant(this.projects[projectIndex]?.description || '');
-
+    return this.translate.instant(
+      this.projects[projectIndex]?.description || ''
+    );
   }
 
   /**
    * Returns the appropriate project github link based on the current project index.
    * @returns {string} The project link.
    */
-  getLink(): string {
+  getGithubLink(): string {
     const projectIndex = this.currentProject - 1;
     return this.projects[projectIndex]?.link || '';
+  }
+
+  /**
+   * Returns the appropriate project link based on the current project index.
+   * @returns {string} The project link.
+   */
+  getProjectLink(): string {
+    const projectIndex = this.currentProject - 1;
+    return this.projects[projectIndex]?.projectLink || '';
   }
 }
