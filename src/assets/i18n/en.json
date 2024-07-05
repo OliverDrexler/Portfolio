@@ -39,6 +39,9 @@
   "FOOTER": {
     "LEGAL": "Legal notice"
   },
+  "OVERLAY": {
+    "LANDSCAPE_WARNING": "Please rotate your device to portrait mode for a better experience."
+  },
   "IMPRINT": {
     "HEADLINE": "Legal notice",
     "SUBHEAD_1": "Imprint",

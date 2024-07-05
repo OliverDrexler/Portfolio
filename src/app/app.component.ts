@@ -1,4 +1,11 @@
-import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Renderer2,
+  AfterViewInit,
+  HostListener,
+  OnInit,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, Router, RouterModule } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -36,6 +43,39 @@ export class AppComponent implements AfterViewInit {
     private translate: TranslateService
   ) {
     translate.setDefaultLang('en');
+  }
+
+  /**
+   * Angular lifecycle hook that is called after data-bound properties are initialized.
+   * Calls the function to check the device's orientation.
+   */
+  ngOnInit() {
+    this.checkOrientation();
+  }
+
+  /**
+   * Host listener for window resize and orientation change events.
+   * Calls the function to check the device's orientation whenever the window is resized or orientation changes.
+   */
+  @HostListener('window:resize')
+  @HostListener('window:orientationchange')
+  onResizeOrOrientationChange() {
+    this.checkOrientation();
+  }
+
+  /**
+   * Checks the orientation of the device and displays a warning overlay if the device is in landscape mode
+   * and has a width of 767px or less (indicating it is a mobile device).
+   * Hides the overlay if the device is in portrait mode or is a larger device.
+   */
+  checkOrientation() {
+    const isPortrait = window.innerHeight > window.innerWidth;
+    const isSmallScreen = window.innerWidth <= 767;
+    if (!isPortrait && isSmallScreen) {
+      document.getElementById('landscape-warning')!.style.display = 'flex';
+    } else {
+      document.getElementById('landscape-warning')!.style.display = 'none';
+    }
   }
 
   /**

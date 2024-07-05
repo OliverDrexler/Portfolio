@@ -39,6 +39,9 @@
   "FOOTER": {
     "LEGAL": "Impressum & Datenschutz"
   },
+  "OVERLAY": {
+    "LANDSCAPE_WARNING": "Gerät für eine bessere Userexperience bitte auf Hochformat drehen."
+  },
   "IMPRINT": {
     "HEADLINE": "Rechtliche Hinweise",
     "SUBHEAD_1": "Impressum",
