@@ -8,34 +8,36 @@
                 {{ 'CONTACT.DESCRIPTION' | translate }}
             </span>
             <form class="contact-form overpass" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <label for="fname">Name</label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" type="text" id="fname"
-                    name="firstname" placeholder="{{ 'CONTACT.NAME' | translate }}" required>
-                @if (!name.valid && name.touched) {
-                <div class="warning-text">{{ 'CONTACT.NAME_R' | translate }}</div>
-                }
+                <label for="name">Name</label>
+                <input #name="ngModel" [(ngModel)]="contactData.name" minlength="3" type="text" id="name" name="name"
+                    placeholder="{{ 'CONTACT.NAME' | translate }}" required>
+                <div *ngIf="!name.valid && name.touched" class="warning-text">
+                    {{ 'CONTACT.NAME_R' | translate }}
+                </div>
 
-                <label for="lname">Email</label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="lname" name="lastname"
-                    placeholder="{{ 'CONTACT.MAIL' | translate }}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                @if (!email.valid && email.touched) {
-                <div class="warning-text">{{ 'CONTACT.MAIL_R' | translate }}</div>
-                }
+                <label for="email">Email</label>
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="{{ 'CONTACT.MAIL' | translate }}" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <div *ngIf="!email.valid && email.touched" class="warning-text">
+                    {{ 'CONTACT.MAIL_R' | translate }}
+                </div>
 
-                <label for="subject">Subject</label>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="subject" name="subject"
+                <label for="message">Message</label>
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="4" id="message" name="message"
                     placeholder="{{ 'CONTACT.MESSAGE' | translate }}" required></textarea>
-                @if (!message.valid && message.touched) {
-                <div class="warning-text">{{ 'CONTACT.MESSAGE_R' | translate }}</div>
-                }
-                <div class="privacy-container">
+                <div *ngIf="!message.valid && message.touched" class="warning-text">
+                    {{ 'CONTACT.MESSAGE_R' | translate }}
+                </div>
 
+                <div class="privacy-container">
                     <label for="privacy" class="custom-checkbox">
-                        <input type="checkbox" checked="checked" id="privacy" name="privacy"
-                            [(ngModel)]="contactData.privacyAccepted" required>
+                        <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacyAccepted"
+                            required>
                         <span class="checkmark"></span>
                     </label>
-                    <p>{{ 'CONTACT.PRIVACY_1' | translate }} <a href="imprint">{{ 'CONTACT.PRIVACY_2' | translate }}</a> {{ 'CONTACT.PRIVACY_3' | translate }}
+                    <p>{{ 'CONTACT.PRIVACY_1' | translate }} <a href="imprint">{{ 'CONTACT.PRIVACY_2' | translate }}</a>
+                        {{ 'CONTACT.PRIVACY_3' | translate }}
                     </p>
                 </div>
                 <input type="submit" value="{{ 'CONTACT.BTN' | translate }}"

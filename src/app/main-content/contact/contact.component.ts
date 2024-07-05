@@ -25,7 +25,7 @@ export class ContactComponent {
 
   showNotification = false;
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://oliverdrexler.com/sendMail.php',
@@ -48,6 +48,8 @@ export class ContactComponent {
               this.showNotification = false;
             }, 3000);
             ngForm.resetForm();
+            console.log(this.contactData);
+            
           },
           error: (error) => {
             console.error(error);
@@ -60,6 +62,7 @@ export class ContactComponent {
         this.showNotification = false;
       }, 3000);
       ngForm.resetForm();
+      console.log(this.contactData);
     }
   }
 }
