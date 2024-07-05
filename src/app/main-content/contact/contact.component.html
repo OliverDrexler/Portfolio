@@ -48,7 +48,7 @@
                 <path class="line" d="M27 0V92.1053" pathLength="1" stroke-width="4" />
             </svg>
         </a>
-        <div class="notification" >
+        <div class="notification" [class.show]="showNotification">
             {{ 'CONTACT.SUBMIT_MESSAGE' | translate }}
         </div>
     </div>
