@@ -18,8 +18,7 @@
     flex-direction: column;
     position: relative;
     background-color: rgba(0, 0, 0, 1);
-    padding: 0 2.5%;
-    width: 95%;
+    padding-inline: max(5%, (100% - 1240px) / 2);
 
     h2 {
         margin: 0;
@@ -230,7 +229,7 @@
     position: absolute;
     display: flex;
     bottom: 0;
-    right: 2.5%;
+    right: max(5%, (100% - 1240px) / 2);
 
     svg {
         stroke: rgb(84, 84, 84);
