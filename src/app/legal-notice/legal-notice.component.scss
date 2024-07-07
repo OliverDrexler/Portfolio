@@ -1,0 +1,62 @@
+.legal-wrapper {
+    padding-inline: max(5%, (100% - 1240px) / 2);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    word-break: break-word;
+
+    h4 {
+        font-family: 'syne';
+        margin: 0;
+        font-weight: 800;
+        font-size: 35px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            color: rgb(86, 147, 244);
+        }
+    }
+
+    h1,
+    h2 {
+        font-family: 'syne';
+        margin: 0;
+        font-weight: 800;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: rgb(86, 147, 244);
+    }
+
+    h3 {
+        font-family: 'syne';
+    }
+
+    p,
+    a,
+    ul {
+        font-family: 'overpass';
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            color: rgb(86, 147, 244);
+        }
+    }
+}
