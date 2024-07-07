@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dropdown-menu',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './dropdown-menu.component.html',
   styleUrl: './dropdown-menu.component.scss',
 })
 export class DropdownMenuComponent {
-  constructor(private router: Router) {}
+  constructor(private translate: TranslateService, private router: Router) {}
 
   /**
    * Generates a URL for the provided fragment.

@@ -20,6 +20,11 @@
       "DESCRIPTION": "Ein unterhaltsames Jump-and-Run-Spiel basierend auf objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen verrückte Hühner zu kämpfen."
     }
   },
+  "DROPDOWN": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Skills",
+    "SUBHEAD": "Sag Hi!"
+  },
   "CONTACT": {
     "HEADLINE": "Sag Hi!",
     "SUBHEADLINE": "Du möchtest ein neues Projekt starten?",

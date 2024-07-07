@@ -1,11 +1,11 @@
 <div id="dropdown" class="dropdown-menu syne">
     <div class="dropdown-links">
         <div class="animated-div">
-            <a [href]="getLink('aboutMe')">About me</a>
+            <a [href]="getLink('aboutMe')">{{ 'DROPDOWN.ABOUT' | translate }}</a>
             <span class="line"></span>
         </div>
         <div class="animated-div">
-            <a [href]="getLink('skills')">My skills</a>
+            <a [href]="getLink('skills')">{{ 'DROPDOWN.SKILLS' | translate }}</a>
             <span class="line"></span>
         </div>
         <div class="animated-div">
@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="dropdown-diagonal"></div>
-    <h2>Say Hi!</h2>
+    <h2>{{ 'DROPDOWN.SUBHEAD' | translate }}</h2>
     <div class="dropdown-bottom overpass">
         <div class="bottom-content">
             <a [href]="getLink('contact')">oliverdrexler&#64;web.de</a>

@@ -20,6 +20,11 @@
       "DESCRIPTION": "An entertaining Jump-and-Run game based on Object-Oriented-Programming. Help Pepe to find coins and tabasco salsa to fight against crazy chicken."
     }
   },
+  "DROPDOWN": {
+    "ABOUT": "About me",
+    "SKILLS": "My skills",
+    "SUBHEAD": "Say Hi!"
+  },
   "CONTACT": {
     "HEADLINE": "Say Hi!",
     "SUBHEADLINE": "Want to discuss a new project?",
