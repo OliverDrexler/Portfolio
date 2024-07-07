@@ -5,6 +5,8 @@
             {{ 'PORTFOLIO.DESCRIPTION' | translate }}
         </p>
     </div>
-    <app-portfolio-project class="portfolio-project" *ngFor="let project of projects; let i = index"
-        [isReverse]="i % 2 !== 0" [currentProject]="i + 1" [totalProjects]="projects.length"></app-portfolio-project>
+    <app-portfolio-project class="portfolio-project"
+        [ngClass]="{ 'animate-left': i % 2 === 0, 'animate-right': i % 2 !== 0 }"
+        *ngFor="let project of projects; let i = index" [isReverse]="i % 2 !== 0" [currentProject]="i + 1"
+        [totalProjects]="projects.length"></app-portfolio-project>
 </section>

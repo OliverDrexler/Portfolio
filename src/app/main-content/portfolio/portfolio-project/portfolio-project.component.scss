@@ -195,7 +195,7 @@
 @media (max-width: 1100px) {
   .project-overview,
   .project-overview.reverse-order {
-    height: 280px;
+    height: 330px;
   }
 }
 
@@ -227,7 +227,13 @@
   .project-overview,
   .project-overview.reverse-order {
     gap: 20px;
-    height: 510px;
+    height: 520px;
+
+    .project-info {
+      h3 {
+        font-size: 35px;
+      }
+    }
   }
 }
 
@@ -258,7 +264,7 @@
   .project-overview,
   .project-overview.reverse-order {
     gap: 5px;
-    height: 520px;
+    height: 570px;
 
     .project-info {
       h3 {

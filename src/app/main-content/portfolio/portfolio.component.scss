@@ -5,69 +5,93 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(255, 255, 255, 1);
-
+    overflow: hidden; 
+  
     .portfolio-project {
-        width: 100%;
+      width: 100%;
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: transform 1s ease-out, opacity 1s ease-out;
+  
+      &.animate-right {
+        transform: translateX(100%);
+      }
+  
+      &.in-view {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
-}
-
-.portfolio-header {
+  }
+  
+  .portfolio-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 478px;
-
+  
     h2 {
-        margin: 0;
-        padding-bottom: 30px;
-        font-weight: 800;
-        font-size: 70px;
-        color: rgba(0, 0, 0, 1);
-
-        &:hover {
-            color: rgb(86, 147, 244);
-        }
+      margin: 0;
+      padding-bottom: 30px;
+      font-weight: 800;
+      font-size: 70px;
+      color: rgba(0, 0, 0, 1);
+  
+      &:hover {
+        color: rgb(86, 147, 244);
+      }
     }
-
+  
     p {
-        margin: 0;
-        font-size: 23px;
-        line-height: 27px;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 1);
-        text-align: justify;
+      margin: 0;
+      font-size: 23px;
+      line-height: 27px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 1);
+      text-align: justify;
     }
-}
-
-@media (max-width: 640px) {
+  }
+  
+  @media (max-width: 890px) {
+    .portfolio-wrapper {
+      .portfolio-project {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+  }
+  
+  @media (max-width: 640px) {
     .portfolio-header {
-        h2 {
-            font-size: 55px;
-            padding-bottom: 20px;
-        }
-
-        p {
-            text-align: center;
-            line-break: auto;
-        }
+      width: 100%;
+      h2 {
+        font-size: 55px;
+        padding-bottom: 20px;
+      }
+  
+      p {
+        text-align: center;
     }
-}
-
-@media (max-width: 530px) {
+  }
+  
+  @media (max-width: 530px) {
     .portfolio-header {
-        width: auto;
-
-        h2 {
-            font-size: 45px;
-            padding-bottom: 10px;
-        }
+      width: 100%;
+  
+      h2 {
+        font-size: 45px;
+        padding-bottom: 10px;
+      }
     }
-}
-
-@media (max-width: 430px) {
+  }
+  
+  @media (max-width: 430px) {
     .portfolio-header {
-        h2 {
-            font-size: 35px;
-        }
+      width: 100%;
+      h2 {
+        font-size: 35px;
+      }
     }
+  }
 }
