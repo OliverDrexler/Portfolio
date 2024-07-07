@@ -132,6 +132,23 @@
     }
 }
 
+.animate-left,
+.animate-right {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.animate-right {
+    transform: translateX(100%);
+}
+
+.animate-left.in-view,
+.animate-right.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 @media (max-width: 890px) {
     .about-me-info {
         flex-direction: column;
@@ -152,6 +169,12 @@
         a {
             display: none;
         }
+    }
+
+    .animate-left,
+    .animate-right {
+        opacity: 1;
+        transform: none;
     }
 }
 
