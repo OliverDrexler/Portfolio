@@ -22,7 +22,7 @@
 
     h1 {
         color: rgb(0, 0, 0, 1);
-        font-size: 72px;
+        font-size: 100px;
         font-weight: 800;
         letter-spacing: -2px;
         margin-top: 70px;
@@ -32,14 +32,18 @@
         span {
             display: block;
         }
+
+        @media (max-width: 1250px) {
+            font-size: 85px;
+        }
+
+        @media (max-width: 1050px) {
+            font-size: 75px;
+        }
     }
 
     @media (min-height: 900px) {
         top: 25%;
-    }
-
-    @media (min-width: 1100px) {
-        gap: 15%;
     }
 }
 
