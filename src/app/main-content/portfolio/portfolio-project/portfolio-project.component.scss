@@ -25,16 +25,19 @@
 .project-overview {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   gap: 100px;
   filter: grayscale(1);
 
   .project-info {
     width: 45%;
-    display: none;
+    opacity: 0;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 20px;
+    margin-left: -30%;
+    margin-right: -30%;
+    transition: margin 0.5s ease;
   
     h3 {
       font-size: 45px;
@@ -121,6 +124,9 @@
 
     .project-info {
       display: flex;
+      opacity: 1;
+      margin-right: 0;
+      margin-left: 0;
     }
 
     .img-border {
