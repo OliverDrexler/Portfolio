@@ -6,8 +6,8 @@ import {
   HostListener,
   OnInit,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet, Router, RouterModule } from '@angular/router';
+import { CommonModule, ViewportScroller } from '@angular/common';
+import { RouterOutlet, Router, RouterModule, NavigationEnd } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { DropdownMenuComponent } from './shared/dropdown-menu/dropdown-menu.component';
@@ -40,7 +40,8 @@ export class AppComponent implements AfterViewInit {
     private el: ElementRef,
     private renderer: Renderer2,
     private router: Router,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private viewportScroller: ViewportScroller
   ) {
     translate.setDefaultLang('en');
   }
@@ -95,6 +96,21 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.addMouseListeners();
     this.addCheckboxListener();
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        const fragment = this.router.parseUrl(this.router.url).fragment;
+        if (fragment) {
+          setTimeout(() => {
+            this.viewportScroller.scrollToAnchor(fragment);
+          });
+        } else {
+          // Scroll to top if no fragment is present
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+      }
+    });
   }
 
   /**
