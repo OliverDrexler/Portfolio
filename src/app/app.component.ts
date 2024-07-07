@@ -15,6 +15,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { AppTranslateModule } from './app.translate';
 import { TranslateService } from '@ngx-translate/core';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,7 @@ import { TranslateService } from '@ngx-translate/core';
     HeaderComponent,
     DropdownMenuComponent,
     ImprintComponent,
+    LegalNoticeComponent,
     RouterModule,
     AppTranslateModule,
   ],

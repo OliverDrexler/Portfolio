@@ -42,7 +42,8 @@
     "SUBMIT_MESSAGE": "Thank you for your message!"
   },
   "FOOTER": {
-    "LEGAL": "Legal notice"
+    "LEGAL": "Legal notice",
+    "IMPRINT": "Imprint"
   },
   "OVERLAY": {
     "LANDSCAPE_WARNING": "Please rotate your device to portrait mode for a better experience."

@@ -1,5 +1,8 @@
 <footer class="footer-section">
-    <a class="mobile-legal-notice overpass" href="imprint">{{ 'FOOTER.LEGAL' | translate }}</a>
+    <div class="mobile-legal-links overpass">
+        <a class="mobile-legal-notice" [routerLink]="'/imprint'">{{ 'FOOTER.IMPRINT' | translate }}</a>
+        <a class="mobile-legal-notice" [routerLink]="'/legal'">{{ 'FOOTER.LEGAL' | translate }}</a>
+    </div>
     <div class="footer-left overpass">
         <a [routerLink]="['/']" fragment="header">
             <img src="../../../assets/img/01_logo/logo_7.png" alt="Logo">
@@ -28,6 +31,9 @@
                 </svg>
             </a>
         </div>
-        <a class="legal-notice" [routerLink]="'/imprint'">{{ 'FOOTER.LEGAL' | translate }}</a>
+        <div class="legal-links">
+            <a class="legal-notice" [routerLink]="'/imprint'">{{ 'FOOTER.IMPRINT' | translate }}</a>
+            <a class="legal-notice" [routerLink]="'/legal'">{{ 'FOOTER.LEGAL' | translate }}</a>
+        </div>
     </div>
 </footer>

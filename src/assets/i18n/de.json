@@ -42,7 +42,8 @@
     "SUBMIT_MESSAGE": "Vielen Dank für die Nachricht!"
   },
   "FOOTER": {
-    "LEGAL": "Impressum & Datenschutz"
+    "LEGAL": "Datenschutz",
+    "IMPRINT": "Impressum"
   },
   "OVERLAY": {
     "LANDSCAPE_WARNING": "Gerät für eine bessere Userexperience bitte auf Hochformat drehen."
